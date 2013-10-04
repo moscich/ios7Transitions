@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstScreenController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
+    self.window.rootViewController = firstScreenController;
+    [self.window addSubview:firstScreenController.view];
     return YES;
 }
 

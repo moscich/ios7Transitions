@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49F440332569874AF09D36A9 /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44F783A043F974D9BF120 /* ImageViewCell.m */; };
+		49F442B3F22659D1DDF70193 /* FirstScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F444EEC4E767EB2796EF52 /* FirstScreenController.m */; };
+		49F444990206256B106DAE8F /* FirstScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F444A6F16287C2191F9D72 /* FirstScreenView.xib */; };
+		49F44683E753FFE497CEF43A /* LocalImageImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F441867FE8CB308D309393 /* LocalImageImporter.m */; };
+		49F44720AE58233F5343B7F1 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44409196211BCCEE5870A /* FirstView.m */; };
+		49F447B07D8E696C5B7686A4 /* gowno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49F44621A3FE819E19605923 /* gowno.jpg */; };
+		49F44B283CACD1E9DCD828BD /* LoremPixumImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */; };
+		49F44D70B9081CE2142ABA5E /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */; };
+		6A089C69051749B6B57856A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED39EE608464E2AA3CEEFF7 /* libPods.a */; };
 		C180A13317FDCDC60005519F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C180A13217FDCDC60005519F /* Foundation.framework */; };
 		C180A13517FDCDC60005519F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C180A13417FDCDC60005519F /* CoreGraphics.framework */; };
 		C180A13717FDCDC60005519F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C180A13617FDCDC60005519F /* UIKit.framework */; };
@@ -35,6 +44,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49F441867FE8CB308D309393 /* LocalImageImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalImageImporter.m; sourceTree = "<group>"; };
+		49F441B78D27D945FEF5C5B1 /* LoremPixumImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremPixumImporter.h; sourceTree = "<group>"; };
+		49F442BC21725CBF35F11F02 /* FirstScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstScreenController.h; sourceTree = "<group>"; };
+		49F44409196211BCCEE5870A /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
+		49F444A6F16287C2191F9D72 /* FirstScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenView.xib; sourceTree = "<group>"; };
+		49F444EEC4E767EB2796EF52 /* FirstScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScreenController.m; sourceTree = "<group>"; };
+		49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoremPixumImporter.m; sourceTree = "<group>"; };
+		49F44621A3FE819E19605923 /* gowno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gowno.jpg; sourceTree = "<group>"; };
+		49F446E3AC0352D094661997 /* ImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewCell.h; sourceTree = "<group>"; };
+		49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
+		49F44B4FA3DD6BD18D5EA58E /* LoremPixumImporterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremPixumImporterProtocol.h; sourceTree = "<group>"; };
+		49F44BA989BA627A1A9CB102 /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
+		49F44EE2B8F42C2FDC113338 /* LocalImageImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalImageImporter.h; sourceTree = "<group>"; };
+		49F44F783A043F974D9BF120 /* ImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewCell.m; sourceTree = "<group>"; };
+		BB0984282CFB4097B422B036 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C180A12F17FDCDC60005519F /* LoremPixum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoremPixum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C180A13217FDCDC60005519F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C180A13417FDCDC60005519F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +77,7 @@
 		C180A15917FDCDC60005519F /* LoremPixumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoremPixumTests-Info.plist"; sourceTree = "<group>"; };
 		C180A15B17FDCDC60005519F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C180A15D17FDCDC60005519F /* LoremPixumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoremPixumTests.m; sourceTree = "<group>"; };
+		CED39EE608464E2AA3CEEFF7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +89,7 @@
 				C180A13917FDCDC60005519F /* CoreData.framework in Frameworks */,
 				C180A13717FDCDC60005519F /* UIKit.framework in Frameworks */,
 				C180A13317FDCDC60005519F /* Foundation.framework in Frameworks */,
+				6A089C69051749B6B57856A0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49F44347E465A7009883E2C8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49F44F783A043F974D9BF120 /* ImageViewCell.m */,
+				49F446E3AC0352D094661997 /* ImageViewCell.h */,
+				49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		49F444AC8E49F50D16157ADA /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				49F442BC21725CBF35F11F02 /* FirstScreenController.h */,
+				49F444EEC4E767EB2796EF52 /* FirstScreenController.m */,
+				49F44AC0EC7FACB77EB81A0D /* View */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		49F44AC0EC7FACB77EB81A0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49F444A6F16287C2191F9D72 /* FirstScreenView.xib */,
+				49F44BA989BA627A1A9CB102 /* FirstView.h */,
+				49F44409196211BCCEE5870A /* FirstView.m */,
+				49F44347E465A7009883E2C8 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49F44FFCEADA859B769EEB0A /* LoremPixumImporter */ = {
+			isa = PBXGroup;
+			children = (
+				49F44B4FA3DD6BD18D5EA58E /* LoremPixumImporterProtocol.h */,
+				49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */,
+				49F441B78D27D945FEF5C5B1 /* LoremPixumImporter.h */,
+				49F441867FE8CB308D309393 /* LocalImageImporter.m */,
+				49F44EE2B8F42C2FDC113338 /* LocalImageImporter.h */,
+			);
+			path = LoremPixumImporter;
+			sourceTree = "<group>";
+		};
 		C180A12617FDCDC60005519F = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +157,7 @@
 				C180A15717FDCDC60005519F /* LoremPixumTests */,
 				C180A13117FDCDC60005519F /* Frameworks */,
 				C180A13017FDCDC60005519F /* Products */,
+				BB0984282CFB4097B422B036 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +178,7 @@
 				C180A13617FDCDC60005519F /* UIKit.framework */,
 				C180A13817FDCDC60005519F /* CoreData.framework */,
 				C180A15017FDCDC60005519F /* XCTest.framework */,
+				CED39EE608464E2AA3CEEFF7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +191,8 @@
 				C180A14917FDCDC60005519F /* Images.xcassets */,
 				C180A14617FDCDC60005519F /* LoremPixum.xcdatamodeld */,
 				C180A13B17FDCDC60005519F /* Supporting Files */,
+				49F44FFCEADA859B769EEB0A /* LoremPixumImporter */,
+				49F444AC8E49F50D16157ADA /* FirstScreen */,
 			);
 			path = LoremPixum;
 			sourceTree = "<group>";
@@ -131,6 +204,7 @@
 				C180A13D17FDCDC60005519F /* InfoPlist.strings */,
 				C180A14017FDCDC60005519F /* main.m */,
 				C180A14217FDCDC60005519F /* LoremPixum-Prefix.pch */,
+				49F44621A3FE819E19605923 /* gowno.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C180A16117FDCDC60005519F /* Build configuration list for PBXNativeTarget "LoremPixum" */;
 			buildPhases = (
+				04B1D54355C645DFB559C1EB /* Check Pods Manifest.lock */,
 				C180A12B17FDCDC60005519F /* Sources */,
 				C180A12C17FDCDC60005519F /* Frameworks */,
 				C180A12D17FDCDC60005519F /* Resources */,
+				6D4FDFBADFD144A986ADFDCD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,7 +277,7 @@
 				ORGANIZATIONNAME = "Marek Mościchowski";
 				TargetAttributes = {
 					C180A14E17FDCDC60005519F = {
-						TestTargetID = C180A12E17FDCDC60005519F;
+						TestTargetID = C180A12E17FDCDC60005519F /* LoremPixum */;
 					};
 				};
 			};
@@ -230,6 +306,9 @@
 			files = (
 				C180A13F17FDCDC60005519F /* InfoPlist.strings in Resources */,
 				C180A14A17FDCDC60005519F /* Images.xcassets in Resources */,
+				49F444990206256B106DAE8F /* FirstScreenView.xib in Resources */,
+				49F44D70B9081CE2142ABA5E /* ImageViewCell.xib in Resources */,
+				49F447B07D8E696C5B7686A4 /* gowno.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +322,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04B1D54355C645DFB559C1EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D4FDFBADFD144A986ADFDCD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C180A12B17FDCDC60005519F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -251,6 +363,11 @@
 				C180A14817FDCDC60005519F /* LoremPixum.xcdatamodeld in Sources */,
 				C180A14517FDCDC60005519F /* AppDelegate.m in Sources */,
 				C180A14117FDCDC60005519F /* main.m in Sources */,
+				49F44B283CACD1E9DCD828BD /* LoremPixumImporter.m in Sources */,
+				49F44683E753FFE497CEF43A /* LocalImageImporter.m in Sources */,
+				49F442B3F22659D1DDF70193 /* FirstScreenController.m in Sources */,
+				49F44720AE58233F5343B7F1 /* FirstView.m in Sources */,
+				49F440332569874AF09D36A9 /* ImageViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -368,6 +485,7 @@
 		};
 		C180A16217FDCDC60005519F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0984282CFB4097B422B036 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -375,12 +493,14 @@
 				GCC_PREFIX_HEADER = "LoremPixum/LoremPixum-Prefix.pch";
 				INFOPLIST_FILE = "LoremPixum/LoremPixum-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		C180A16317FDCDC60005519F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0984282CFB4097B422B036 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -388,6 +508,7 @@
 				GCC_PREFIX_HEADER = "LoremPixum/LoremPixum-Prefix.pch";
 				INFOPLIST_FILE = "LoremPixum/LoremPixum-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +574,7 @@
 				C180A16317FDCDC60005519F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C180A16417FDCDC60005519F /* Build configuration list for PBXNativeTarget "LoremPixumTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +583,7 @@
 				C180A16617FDCDC60005519F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
