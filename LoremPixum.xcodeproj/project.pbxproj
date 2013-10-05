@@ -10,15 +10,20 @@
 		49F440332569874AF09D36A9 /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44F783A043F974D9BF120 /* ImageViewCell.m */; };
 		49F442B3F22659D1DDF70193 /* FirstScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F444EEC4E767EB2796EF52 /* FirstScreenController.m */; };
 		49F444990206256B106DAE8F /* FirstScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F444A6F16287C2191F9D72 /* FirstScreenView.xib */; };
+		49F44523AC386EAE1C2E673E /* MainControllerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F447099226E4873300193A /* MainControllerContainer.m */; };
+		49F445F1A9ED3B8347A38CC7 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44179871B6F90E2071D4D /* MenuViewController.m */; };
 		49F44683E753FFE497CEF43A /* LocalImageImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F441867FE8CB308D309393 /* LocalImageImporter.m */; };
+		49F44695443567128B1450E9 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F449769B10C9A59C31F784 /* MenuView.xib */; };
 		49F44720AE58233F5343B7F1 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44409196211BCCEE5870A /* FirstView.m */; };
 		49F447AD9A3BE451907CDE06 /* SecondScreenImagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F445E2AED384352C624444 /* SecondScreenImagePack.m */; };
 		49F447B07D8E696C5B7686A4 /* gowno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49F44621A3FE819E19605923 /* gowno.jpg */; };
+		49F447DD0209360230ACDDB4 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4449866F1F721F91F42C3 /* MenuView.m */; };
 		49F448D1F2B3F585BB8EFD61 /* FirstViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F44E1568A3346601D91084 /* FirstViewHeaderCell.xib */; };
 		49F449AC89919D21FDA76F53 /* SecondScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44C5B00D19FD036C8E788 /* SecondScreenView.m */; };
 		49F44A4B2D8E357D01AA076B /* SecondScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F442852A70C540324A4494 /* SecondScreenController.m */; };
 		49F44B283CACD1E9DCD828BD /* LoremPixumImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */; };
 		49F44D70B9081CE2142ABA5E /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */; };
+		49F44F1EEAAD4AE2745CCD31 /* MainContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F449A5BE9812B97DD1022D /* MainContainerView.m */; };
 		49F44F27243207ECCB8E29F5 /* SecondScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F440B8A0091210026C931D /* SecondScreenView.xib */; };
 		6A089C69051749B6B57856A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED39EE608464E2AA3CEEFF7 /* libPods.a */; };
 		C180A13317FDCDC60005519F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C180A13217FDCDC60005519F /* Foundation.framework */; };
@@ -50,18 +55,27 @@
 
 /* Begin PBXFileReference section */
 		49F440B8A0091210026C931D /* SecondScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenView.xib; sourceTree = "<group>"; };
+		49F44179871B6F90E2071D4D /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		49F441867FE8CB308D309393 /* LocalImageImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalImageImporter.m; sourceTree = "<group>"; };
 		49F441B78D27D945FEF5C5B1 /* LoremPixumImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremPixumImporter.h; sourceTree = "<group>"; };
 		49F442852A70C540324A4494 /* SecondScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenController.m; sourceTree = "<group>"; };
 		49F442BC21725CBF35F11F02 /* FirstScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstScreenController.h; sourceTree = "<group>"; };
+		49F443F3BED1AED79C14331B /* MainContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContainerView.h; sourceTree = "<group>"; };
 		49F44409196211BCCEE5870A /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
+		49F4449866F1F721F91F42C3 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 		49F444A6F16287C2191F9D72 /* FirstScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenView.xib; sourceTree = "<group>"; };
 		49F444EEC4E767EB2796EF52 /* FirstScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScreenController.m; sourceTree = "<group>"; };
 		49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoremPixumImporter.m; sourceTree = "<group>"; };
 		49F445E2AED384352C624444 /* SecondScreenImagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenImagePack.m; sourceTree = "<group>"; };
 		49F44621A3FE819E19605923 /* gowno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gowno.jpg; sourceTree = "<group>"; };
+		49F44651CF85B3F8613D533D /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		49F446E3AC0352D094661997 /* ImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewCell.h; sourceTree = "<group>"; };
+		49F447099226E4873300193A /* MainControllerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainControllerContainer.m; sourceTree = "<group>"; };
+		49F44919E8804DA3DDCB1DE4 /* ContainerControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerControllerProtocol.h; sourceTree = "<group>"; };
+		49F449769B10C9A59C31F784 /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		49F449A5BE9812B97DD1022D /* MainContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContainerView.m; sourceTree = "<group>"; };
 		49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
+		49F44A7C04F6C574C7AD7205 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		49F44AB0C5F285D5B2AA5420 /* SecondScreenImagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenImagePack.h; sourceTree = "<group>"; };
 		49F44AE1F42337B76E1F450E /* SecondScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenController.h; sourceTree = "<group>"; };
 		49F44B4FA3DD6BD18D5EA58E /* LoremPixumImporterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremPixumImporterProtocol.h; sourceTree = "<group>"; };
@@ -70,6 +84,7 @@
 		49F44E1568A3346601D91084 /* FirstViewHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewHeaderCell.xib; sourceTree = "<group>"; };
 		49F44EE2B8F42C2FDC113338 /* LocalImageImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalImageImporter.h; sourceTree = "<group>"; };
 		49F44F2B9A0FA397A907C080 /* SecondScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenView.h; sourceTree = "<group>"; };
+		49F44F3A1C3320FCC6C82061 /* MainControllerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainControllerContainer.h; sourceTree = "<group>"; };
 		49F44F783A043F974D9BF120 /* ImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewCell.m; sourceTree = "<group>"; };
 		BB0984282CFB4097B422B036 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C180A12F17FDCDC60005519F /* LoremPixum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoremPixum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +135,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49F441BE003BE59B3E57C458 /* MainControllerContainer */ = {
+			isa = PBXGroup;
+			children = (
+				49F447099226E4873300193A /* MainControllerContainer.m */,
+				49F44F3A1C3320FCC6C82061 /* MainControllerContainer.h */,
+				49F44919E8804DA3DDCB1DE4 /* ContainerControllerProtocol.h */,
+				49F449A5BE9812B97DD1022D /* MainContainerView.m */,
+				49F443F3BED1AED79C14331B /* MainContainerView.h */,
+			);
+			path = MainControllerContainer;
+			sourceTree = "<group>";
+		};
 		49F442A88F2CB32CB36288C1 /* BusinessObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +187,16 @@
 			path = SecondScreen;
 			sourceTree = "<group>";
 		};
+		49F448F465056F5ED302E367 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49F44179871B6F90E2071D4D /* MenuViewController.m */,
+				49F44651CF85B3F8613D533D /* MenuViewController.h */,
+				49F44EF72E15541120525648 /* View */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
 		49F44AB76C80C88DE7F7E2C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +214,16 @@
 				49F44BA989BA627A1A9CB102 /* FirstView.h */,
 				49F44409196211BCCEE5870A /* FirstView.m */,
 				49F44347E465A7009883E2C8 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49F44EF72E15541120525648 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49F44A7C04F6C574C7AD7205 /* MenuView.h */,
+				49F4449866F1F721F91F42C3 /* MenuView.m */,
+				49F449769B10C9A59C31F784 /* MenuView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,6 +285,8 @@
 				49F444AC8E49F50D16157ADA /* FirstScreen */,
 				49F4457A4B1A10015900E1C7 /* SecondScreen */,
 				49F442A88F2CB32CB36288C1 /* BusinessObject */,
+				49F441BE003BE59B3E57C458 /* MainControllerContainer */,
+				49F448F465056F5ED302E367 /* MenuViewController */,
 			);
 			path = LoremPixum;
 			sourceTree = "<group>";
@@ -356,6 +405,7 @@
 				49F447B07D8E696C5B7686A4 /* gowno.jpg in Resources */,
 				49F44F27243207ECCB8E29F5 /* SecondScreenView.xib in Resources */,
 				49F448D1F2B3F585BB8EFD61 /* FirstViewHeaderCell.xib in Resources */,
+				49F44695443567128B1450E9 /* MenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +468,10 @@
 				49F44A4B2D8E357D01AA076B /* SecondScreenController.m in Sources */,
 				49F449AC89919D21FDA76F53 /* SecondScreenView.m in Sources */,
 				49F447AD9A3BE451907CDE06 /* SecondScreenImagePack.m in Sources */,
+				49F44523AC386EAE1C2E673E /* MainControllerContainer.m in Sources */,
+				49F445F1A9ED3B8347A38CC7 /* MenuViewController.m in Sources */,
+				49F447DD0209360230ACDDB4 /* MenuView.m in Sources */,
+				49F44F1EEAAD4AE2745CCD31 /* MainContainerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

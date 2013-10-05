@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "FirstScreenController.h"
+#import "MainControllerContainer.h"
+#import "SecondScreenController.h"
+#import "MenuViewController.h"
 
 @implementation AppDelegate
 
@@ -21,10 +24,12 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    MenuViewController *menuViewController = [[MenuViewController alloc] initWithNibName:@"MenuView" bundle:nil];
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstScreenController];
-    self.window.rootViewController = navigationController;
-    [self.window addSubview:navigationController.view];
+    MainControllerContainer *controllerContainer = [[MainControllerContainer alloc] initWithFrontViewController:navigationController backViewController:menuViewController];
+    self.window.rootViewController = controllerContainer;
+    [self.window addSubview:controllerContainer.view];
     return YES;
 }
 
