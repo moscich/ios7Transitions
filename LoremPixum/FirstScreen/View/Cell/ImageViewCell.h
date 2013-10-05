@@ -14,6 +14,6 @@
     
 }
 
-@property(nonatomic, retain) IBOutlet UIImageView *srakaNaCiescie;
+@property(nonatomic, retain) IBOutlet UIImageView *horizontalImageView;
 
 @end

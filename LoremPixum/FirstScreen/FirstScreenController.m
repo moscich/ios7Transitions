@@ -8,8 +8,7 @@
 
 #import "FirstScreenController.h"
 #import "LoremPixumImporter.h"
-#import "LocalImageImporter.h"
-#import "FirstView.h"
+#import "SecondScreenController.h"
 
 
 @implementation FirstScreenController
@@ -19,6 +18,10 @@
 
 - (void)viewDidLoad
 {
+
+    FirstView *_firstView = (FirstView *)self.view;
+    _firstView.delegate = self;
+
     LoremPixumImporter *loremPixumImporter = [[LoremPixumImporter alloc] init];
     int width = 640;
     int height = 1136;
@@ -34,13 +37,16 @@
     }
 }
 
-- (void)taptap
+- (void)loadView
 {
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *screenImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    myImageView.image = screenImage;
+    [super loadView];
+}
+
+- (void)navigateToSecondView:(SecondScreenImagePack *)imagePack
+{
+    SecondScreenController *secondScreenController = [[SecondScreenController alloc] initWithNibName:@"SecondScreenView" bundle:nil];
+    [secondScreenController setImagePack:imagePack];
+    [self.navigationController pushViewController:secondScreenController animated:NO];
 }
 
 @end

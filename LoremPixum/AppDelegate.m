@@ -22,8 +22,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
-    self.window.rootViewController = firstScreenController;
-    [self.window addSubview:firstScreenController.view];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstScreenController];
+    self.window.rootViewController = navigationController;
+    [self.window addSubview:navigationController.view];
     return YES;
 }
 

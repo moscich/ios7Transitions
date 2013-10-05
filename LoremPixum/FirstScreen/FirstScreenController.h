@@ -7,11 +7,11 @@
 
 
 #import <Foundation/Foundation.h>
+#import "FirstView.h"
 
 
-@interface FirstScreenController : UIViewController
+@interface FirstScreenController : UIViewController <FirstViewDelegate>
 {
-    IBOutlet UIImageView *imageView;
-    IBOutlet UIImageView *myImageView;
 }
+
 @end

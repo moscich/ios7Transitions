@@ -8,12 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+@class DetailView;
+@class SecondScreenImagePack;
+
+@protocol FirstViewDelegate
+
+- (void)navigateToSecondView:(SecondScreenImagePack *)imagePack;
+
+@end
 
 @interface FirstView : UIView <UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableArray *dataSource;
+    NSMutableDictionary *croppedImages;
     IBOutlet UITableView *tableView;
 }
+
+@property (nonatomic, assign) NSObject <FirstViewDelegate> *delegate;
+
 - (void)populateView:(UIImage *)image;
 
 @end
