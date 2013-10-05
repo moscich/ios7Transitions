@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a101f63e-ef21-4dd2-a105-53bed8c1ffba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/BusinessObject/SecondScreenImagePack.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/BusinessObject/SecondScreenImagePack.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/AppDelegate.m" afterPath="$PROJECT_DIR$/LoremPixum/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum.xcworkspace/xcuserdata/moscich.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/LoremPixum.xcworkspace/xcuserdata/moscich.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.h" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstScreenView.xib" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstScreenView.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/Cell/ImageViewCell.h" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/Cell/ImageViewCell.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/Cell/ImageViewCell.m" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/Cell/ImageViewCell.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/Cell/ImageViewCell.xib" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/Cell/ImageViewCell.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/LoremPixum.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a101f63e-ef21-4dd2-a105-53bed8c1ffba" name="Default" comment="" />
     <ignored path="LoremPixum.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380906697605" ignored="false" />
@@ -554,7 +535,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32395834" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -564,7 +545,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39895833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30208334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30208334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
