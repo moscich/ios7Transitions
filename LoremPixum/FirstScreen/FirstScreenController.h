@@ -10,7 +10,7 @@
 #import "FirstView.h"
 
 
-@interface FirstScreenController : UIViewController <FirstViewDelegate>
+@interface FirstScreenController : UIViewController <FirstViewDelegate, UINavigationControllerDelegate>
 {
 }
 

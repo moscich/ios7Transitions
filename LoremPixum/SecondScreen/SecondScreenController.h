@@ -16,4 +16,7 @@
     SecondScreenImagePack *imagePack;
 }
 - (void)setImagePack:(SecondScreenImagePack *)_imagePack;
+
+- (void)setBackgroundImage:(UIImage *)backgroundImage;
+
 @end

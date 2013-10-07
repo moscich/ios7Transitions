@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a101f63e-ef21-4dd2-a105-53bed8c1ffba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MainControllerContainer/ContainerControllerProtocol.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainContainerView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainContainerView.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainControllerContainer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainControllerContainer.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MenuViewController/View/MenuView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MenuViewController/View/MenuView.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MenuViewController/MenuViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/MenuViewController/MenuViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/AppDelegate.m" afterPath="$PROJECT_DIR$/LoremPixum/AppDelegate.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.h" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m" afterPath="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.h" afterPath="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m" afterPath="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoremPixum.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/LoremPixum.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LoremPixum.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380981476428" ignored="false" />
+    <file path="/Dummy.txt" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381171875066" ignored="false" />
     <file path="/LoremPixumImporterProtocol.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380817202640" ignored="false" />
     <file path="/LoremPixumImporter.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380901947991" ignored="false" />
     <file path="/FirstScreenController.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380914858216" ignored="false" />
-    <file path="/FirstScreenController.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380918983532" ignored="false" />
+    <file path="/FirstScreenController.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381173311694" ignored="false" />
     <file path="/LoremPixumImporter.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380904278763" ignored="false" />
     <file path="/AppDelegate.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380986549010" ignored="false" />
     <file path="/fragment.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380983639251" ignored="false" />
@@ -30,8 +28,8 @@
     <file path="/LocalImageImporter.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380904007283" ignored="false" />
     <file path="/FistView.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380825092340" ignored="false" />
     <file path="/ImageViewCell.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380825198635" ignored="false" />
-    <file path="/FirstView.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380978693520" ignored="false" />
-    <file path="/FirstView.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380971122911" ignored="false" />
+    <file path="/FirstView.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381174069424" ignored="false" />
+    <file path="/FirstView.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381174063041" ignored="false" />
     <file path="/ImageViewCell.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380827488658" ignored="false" />
     <file path="$PROJECT_DIR$/LoremPixum.xcodeproj/xcuserdata/moscich.xcuserdatad/xcschemes/LoremPixum.xcscheme" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380906837304" ignored="false" />
     <file path="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/moscich.xcuserdatad/xcschemes/Pods-AFNetworking.xcscheme" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380906837304" ignored="false" />
@@ -39,8 +37,8 @@
     <file path="/DetailView.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380916053595" ignored="false" />
     <file path="/DetailView.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380916585206" ignored="false" />
     <file path="/SecondScreenView.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380918380937" ignored="false" />
-    <file path="/SecondScreenController.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380923799619" ignored="false" />
-    <file path="/SecondScreenController.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380918476350" ignored="false" />
+    <file path="/SecondScreenController.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381175225506" ignored="false" />
+    <file path="/SecondScreenController.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381175050469" ignored="false" />
     <file path="/SecondScreenImagePack.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380917989010" ignored="false" />
     <file path="/SecondScreenView.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380969628726" ignored="false" />
     <file path="/ContainerController.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380981717168" ignored="false" />
@@ -51,6 +49,8 @@
     <file path="/MenuView.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380986926216" ignored="false" />
     <file path="/MainContainerView.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380986658728" ignored="false" />
     <file path="/MainContainerView.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1380987139455" ignored="false" />
+    <file path="/AnimateOpenImage.m" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381175549448" ignored="false" />
+    <file path="/AnimateOpenImage.h" changelist="a101f63e-ef21-4dd2-a105-53bed8c1ffba" time="1381173236374" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,39 +70,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FirstScreenController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m">
+      <file leaf-file-name="FirstView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#192#225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuView.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/MenuViewController/View/MenuView.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="239" selection-end="247" vertical-scroll-proportion="0.0">
+            <state line="16" column="43" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuView.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/MenuViewController/View/MenuView.m">
+      <file leaf-file-name="SecondScreenView.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="49" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/MenuViewController/MenuViewController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="239" selection-end="257" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,51 +97,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDelegate.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/AppDelegate.m">
+      <file leaf-file-name="AnimateOpenImage.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="170" selection-start="1412" selection-end="1430" vertical-scroll-proportion="0.0">
+            <state line="13" column="45" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainContainerView.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainContainerView.h">
+      <file leaf-file-name="AnimateOpenImage.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="36" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
+            <state line="29" column="81" selection-start="905" selection-end="905" vertical-scroll-proportion="0.07931571">
               <folding>
-                <element signature="e#192#225#0" expanded="true" />
+                <element signature="e#192#220#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/main.m">
+      <file leaf-file-name="FirstView.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+            <state line="94" column="24" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainContainerView.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainContainerView.m">
+      <file leaf-file-name="SecondScreenController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+            <state line="19" column="54" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainControllerContainer.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainControllerContainer.m">
+      <file leaf-file-name="SecondScreenView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="53" selection-start="1705" selection-end="1705" vertical-scroll-proportion="1.4299065">
-              <folding>
-                <element signature="e#192#227#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecondScreenController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="14" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FirstScreenController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="28" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,13 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.h" />
-        <option value="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m" />
-        <option value="$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.m" />
-        <option value="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h" />
-        <option value="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m" />
-        <option value="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m" />
-        <option value="$PROJECT_DIR$/LoremPixum/MainControllerContainer/ContainerController.h" />
         <option value="$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainControllerContainer.h" />
         <option value="$PROJECT_DIR$/LoremPixum/MenuViewController/MenuView.h" />
         <option value="$PROJECT_DIR$/LoremPixum/MenuViewController/MenuViewController.h" />
@@ -200,6 +189,13 @@
         <option value="$PROJECT_DIR$/LoremPixum/MenuViewController/View/MenuView.m" />
         <option value="$PROJECT_DIR$/LoremPixum/AppDelegate.m" />
         <option value="$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainContainerView.m" />
+        <option value="$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.h" />
+        <option value="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h" />
+        <option value="$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m" />
+        <option value="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m" />
+        <option value="$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m" />
+        <option value="$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.h" />
+        <option value="$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.m" />
       </list>
     </option>
   </component>
@@ -374,7 +370,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MenuViewController" />
+              <option name="myItemId" value="Shared" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,7 +388,25 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MenuViewController" />
+              <option name="myItemId" value="SecondScreen" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoremPixum" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoremPixum" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SecondScreen" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -418,19 +432,59 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoremPixum" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoremPixum" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstScreen" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoremPixum" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoremPixum" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstScreen" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Container" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="LoremPixum" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.LoremPixum">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="LoremPixum" TARGET_NAME="LoremPixum" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="LoremPixum" RUN_TARGET_NAME="LoremPixum" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -484,23 +538,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1920" height="1054" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32395834" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.199262" sideWeight="0.6979167" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.199262" sideWeight="0.69895834" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39895833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30208334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30104166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -565,94 +619,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <option name="time" value="46" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="23" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="84" selection-start="2569" selection-end="2569" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#192#213#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="75" selection-start="524" selection-end="524" vertical-scroll-proportion="0.66199374">
-          <folding>
-            <element signature="e#192#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/MainControllerContainer/ContainerControllerProtocol.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="57" selection-start="334" selection-end="334" vertical-scroll-proportion="0.317757">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainControllerContainer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="82" selection-start="350" selection-end="350" vertical-scroll-proportion="0.317757">
-          <folding>
-            <element signature="e#192#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/MenuViewController/MenuViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/MenuViewController/MenuViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="239" selection-end="257" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/MenuViewController/View/MenuView.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="239" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#192#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainContainerView.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="36" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#192#225#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -686,9 +660,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LoremPixum/MainControllerContainer/MainControllerContainer.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="53" selection-start="1705" selection-end="1705" vertical-scroll-proportion="1.4299065">
+        <state line="54" column="53" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/MenuViewController/MenuViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="43" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/View/SecondScreenView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="14" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/FirstScreenController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="28" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/FirstScreen/View/FirstView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="24" selection-start="2658" selection-end="2658" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/SecondScreen/SecondScreenController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="54" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoremPixum/Shared/AnimateOpenImage.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="81" selection-start="905" selection-end="905" vertical-scroll-proportion="0.07931571">
           <folding>
-            <element signature="e#192#227#0" expanded="true" />
+            <element signature="e#192#220#0" expanded="true" />
           </folding>
         </state>
       </provider>

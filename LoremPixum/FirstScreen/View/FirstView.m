@@ -89,16 +89,10 @@
 
 - (void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int upperSomething = 100 * indexPath.row + 2 - (int)_tableView.contentOffset.y + 120;
-    NSLog(@"content offset = %d", upperSomething);
+    CGRect rectInTableView = [_tableView rectForRowAtIndexPath:indexPath];
+    CGRect frame = [_tableView convertRect:rectInTableView toView:self];
 
-    UIImage *screenShot = [self screenShot];
-    SecondScreenImagePack *imagePack = [[SecondScreenImagePack alloc] init];
-    imagePack.backgroundImage = [dataSource objectAtIndex:indexPath.row];
-    imagePack.upperImage = [self cropImage:screenShot withRect:CGRectMake(0, 0, screenShot.size.width, upperSomething)];
-    imagePack.lowerImage = [self cropImage:screenShot withRect:CGRectMake(0, upperSomething + 98, screenShot.size.width, screenShot.size.height- upperSomething)];
-
-    [self.delegate navigateToSecondView:imagePack];
+    [self.delegate didSelectRowWithFrame:frame];
 }
 
 - (UIImage *)croppedImageForRow:(int)row

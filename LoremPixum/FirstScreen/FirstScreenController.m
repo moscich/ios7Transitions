@@ -9,16 +9,16 @@
 #import "FirstScreenController.h"
 #import "LoremPixumImporter.h"
 #import "SecondScreenController.h"
+#import "AnimateOpenImage.h"
 
 
 @implementation FirstScreenController
 {
-
+    AnimateOpenImage *transitionAnimation;
 }
 
 - (void)viewDidLoad
 {
-
     FirstView *_firstView = (FirstView *)self.view;
     _firstView.delegate = self;
 
@@ -35,6 +35,9 @@
                 [firstView populateView:image];
         }];
     }
+
+    transitionAnimation = [[AnimateOpenImage alloc] init];
+    self.navigationController.delegate = self;
 }
 
 - (void)loadView
@@ -42,11 +45,31 @@
     [super loadView];
 }
 
+
+- (void)didSelectRowWithFrame:(CGRect)frame
+{
+    transitionAnimation.rowFrame = frame;
+    SecondScreenController *secondScreenController = [[SecondScreenController alloc] initWithNibName:@"SecondScreenView" bundle:nil];
+    self.navigationController.delegate = self;
+    [self.navigationController pushViewController:secondScreenController animated:YES];
+}
 - (void)navigateToSecondView:(SecondScreenImagePack *)imagePack
 {
     SecondScreenController *secondScreenController = [[SecondScreenController alloc] initWithNibName:@"SecondScreenView" bundle:nil];
+
     [secondScreenController setImagePack:imagePack];
     [self.navigationController pushViewController:secondScreenController animated:NO];
 }
+
+- (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+    return transitionAnimation;
+}
+
+//- (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>)animationController
+//{
+//    return drivenInteractiveTransition;
+//}
+
 
 @end

@@ -11,6 +11,7 @@
 		49F442B3F22659D1DDF70193 /* FirstScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F444EEC4E767EB2796EF52 /* FirstScreenController.m */; };
 		49F444990206256B106DAE8F /* FirstScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F444A6F16287C2191F9D72 /* FirstScreenView.xib */; };
 		49F44523AC386EAE1C2E673E /* MainControllerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F447099226E4873300193A /* MainControllerContainer.m */; };
+		49F4452F8621DA70C741CE8F /* AnimateOpenImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44359B94AD8ACB3A7C587 /* AnimateOpenImage.m */; };
 		49F445F1A9ED3B8347A38CC7 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44179871B6F90E2071D4D /* MenuViewController.m */; };
 		49F44683E753FFE497CEF43A /* LocalImageImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F441867FE8CB308D309393 /* LocalImageImporter.m */; };
 		49F44695443567128B1450E9 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F449769B10C9A59C31F784 /* MenuView.xib */; };
@@ -60,6 +61,7 @@
 		49F441B78D27D945FEF5C5B1 /* LoremPixumImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremPixumImporter.h; sourceTree = "<group>"; };
 		49F442852A70C540324A4494 /* SecondScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenController.m; sourceTree = "<group>"; };
 		49F442BC21725CBF35F11F02 /* FirstScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstScreenController.h; sourceTree = "<group>"; };
+		49F44359B94AD8ACB3A7C587 /* AnimateOpenImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateOpenImage.m; sourceTree = "<group>"; };
 		49F443F3BED1AED79C14331B /* MainContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContainerView.h; sourceTree = "<group>"; };
 		49F44409196211BCCEE5870A /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
 		49F4449866F1F721F91F42C3 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		49F44919E8804DA3DDCB1DE4 /* ContainerControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerControllerProtocol.h; sourceTree = "<group>"; };
 		49F449769B10C9A59C31F784 /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		49F449A5BE9812B97DD1022D /* MainContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContainerView.m; sourceTree = "<group>"; };
+		49F44A0B7225D2FD2EBCDC48 /* AnimateOpenImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateOpenImage.h; sourceTree = "<group>"; };
 		49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
 		49F44A7C04F6C574C7AD7205 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		49F44AB0C5F285D5B2AA5420 /* SecondScreenImagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenImagePack.h; sourceTree = "<group>"; };
@@ -175,6 +178,15 @@
 				49F44AC0EC7FACB77EB81A0D /* View */,
 			);
 			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		49F444CEF2747606FE0FA478 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				49F44359B94AD8ACB3A7C587 /* AnimateOpenImage.m */,
+				49F44A0B7225D2FD2EBCDC48 /* AnimateOpenImage.h */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		49F4457A4B1A10015900E1C7 /* SecondScreen */ = {
@@ -287,6 +299,7 @@
 				49F442A88F2CB32CB36288C1 /* BusinessObject */,
 				49F441BE003BE59B3E57C458 /* MainControllerContainer */,
 				49F448F465056F5ED302E367 /* MenuViewController */,
+				49F444CEF2747606FE0FA478 /* Shared */,
 			);
 			path = LoremPixum;
 			sourceTree = "<group>";
@@ -472,6 +485,7 @@
 				49F445F1A9ED3B8347A38CC7 /* MenuViewController.m in Sources */,
 				49F447DD0209360230ACDDB4 /* MenuView.m in Sources */,
 				49F44F1EEAAD4AE2745CCD31 /* MainContainerView.m in Sources */,
+				49F4452F8621DA70C741CE8F /* AnimateOpenImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

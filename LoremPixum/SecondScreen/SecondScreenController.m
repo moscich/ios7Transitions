@@ -21,9 +21,14 @@
     imagePack = _imagePack;
 }
 
+- (void)setBackgroundImage:(UIImage *)backgroundImage
+{
+    ((SecondScreenView *) self.view).backgroundImageView.image = backgroundImage;
+}
+
 - (void)viewDidLoad
 {
-    [((SecondScreenView *) self.view) populateViewWithImagePack:imagePack];
+//    [((SecondScreenView *) self.view) populateViewWithImagePack:imagePack];
 }
 
 @end
