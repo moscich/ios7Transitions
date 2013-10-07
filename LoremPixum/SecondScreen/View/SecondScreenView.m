@@ -24,8 +24,9 @@
             self.frame.size.height - self.lowerImageView.image.size.height,
             self.frame.size.width,
             self.lowerImageView.image.size.height);
-    [self performSelector:@selector(openView) withObject:nil afterDelay:0.1];
-    self.backgroundImageView.center = CGPointMake(self.upperImageView.center.x, self.upperImageView.frame.size.height + 50);
+    [self performSelector:@selector(openView) withObject:nil afterDelay:0.03];
+    float centerY = self.upperImageView.frame.size.height > 0 ? self.upperImageView.frame.size.height + 50 : self.frame.size.height - self.lowerImageView.frame.size.height - 40;
+    self.backgroundImageView.center = CGPointMake(self.center.x, centerY);
 }
 
 - (void)openView

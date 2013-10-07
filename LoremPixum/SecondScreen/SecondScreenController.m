@@ -23,7 +23,9 @@
 
 - (void)viewDidLoad
 {
-    [((SecondScreenView *) self.view) populateViewWithImagePack:imagePack];
+    SecondScreenView *view = (SecondScreenView *) self.view;
+    view.frame = [[UIScreen mainScreen] bounds];
+    [view populateViewWithImagePack:imagePack];
 }
 
 @end

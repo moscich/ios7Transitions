@@ -89,6 +89,8 @@
 
 - (void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(indexPath.section == 0)
+        return;
     int upperSomething = 100 * indexPath.row + 2 - (int)_tableView.contentOffset.y + 120;
     NSLog(@"content offset = %d", upperSomething);
 
