@@ -12,6 +12,7 @@
 
 @interface FirstScreenController : UIViewController <FirstViewDelegate, UINavigationControllerDelegate>
 {
+    UIPercentDrivenInteractiveTransition *percentDrivenInteractiveTransition;
 }
 
 @end

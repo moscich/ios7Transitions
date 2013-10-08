@@ -9,14 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @class SecondScreenImagePack;
+@class AnimateOpenImage;
 
 
-@interface SecondScreenController : UIViewController
-{
+@interface SecondScreenController : UIViewController <UINavigationControllerDelegate> {
     SecondScreenImagePack *imagePack;
 }
-- (void)setImagePack:(SecondScreenImagePack *)_imagePack;
 
+@property (nonatomic, retain) AnimateOpenImage *animateOpenImage;
+
+- (void)setImagePack:(SecondScreenImagePack *)_imagePack;
 - (void)setBackgroundImage:(UIImage *)backgroundImage;
 
 @end

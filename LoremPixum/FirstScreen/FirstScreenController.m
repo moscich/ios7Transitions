@@ -37,6 +37,7 @@
     }
 
     transitionAnimation = [[AnimateOpenImage alloc] init];
+    percentDrivenInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
     self.navigationController.delegate = self;
 }
 
@@ -50,6 +51,7 @@
 {
     transitionAnimation.rowFrame = frame;
     SecondScreenController *secondScreenController = [[SecondScreenController alloc] initWithNibName:@"SecondScreenView" bundle:nil];
+    secondScreenController.animateOpenImage = transitionAnimation;
     [secondScreenController setBackgroundImage:image];
     self.navigationController.delegate = self;
     [self.navigationController pushViewController:secondScreenController animated:YES];
@@ -66,10 +68,10 @@
 {
     return transitionAnimation;
 }
-
+//
 //- (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>)animationController
 //{
-//    return drivenInteractiveTransition;
+//    return percentDrivenInteractiveTransition;
 //}
 
 

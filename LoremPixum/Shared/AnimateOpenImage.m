@@ -23,11 +23,12 @@
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    return 1.0;
+    return 0.5;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
+    NSLog(@"canceled = %d", transitionContext.transitionWasCancelled);
     BOOL pushTransition;
     SecondScreenController *secondScreenController;
     FirstScreenController *firstScreenController;
@@ -87,14 +88,13 @@
         firstScreenController.view.frame = firstScreenFrame;
     }
 
-    // 5. animate
     NSTimeInterval duration = [self transitionDuration:transitionContext];
 
     [UIView animateWithDuration:duration animations:^{
         if(pushTransition) {
             lowerImageView.frame = CGRectMake(0, secondScreenView.frame.size.height, lowerImageView.frame.size.width, lowerImageView.frame.size.height);
             upperImageView.frame = CGRectMake(0, -upperImageView.frame.size.height, upperImageView.frame.size.width, upperImageView.frame.size.height);
-            secondScreenView.backgroundImageView.center = ((SecondScreenView *)secondScreenController.view).center;
+            secondScreenView.backgroundImageView.center = secondScreenView.center;
         }
         else
         {
@@ -107,9 +107,10 @@
 
         [upperImageView removeFromSuperview];
         [lowerImageView removeFromSuperview];
-        [transitionContext completeTransition:YES];
 
-        if(!pushTransition)
+        [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
+
+        if(!pushTransition && !transitionContext.transitionWasCancelled)
             [containerView addSubview:firstScreenController.view];
 
     }];
@@ -137,9 +138,10 @@
     return screenImage;
 }
 
-- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
-
-}
+//- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
+//    NSLog(@"Start interactive");
+//    [self animateTransition:transitionContext];
+//}
 
 
 @end

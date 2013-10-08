@@ -54,6 +54,7 @@
     [self.view insertSubview:bottomController.view belowSubview:topScrollView];
     ((MainContainerView *)self.view).menuView = bottomController.view;
     ((MainContainerView *)self.view).scrollView = topScrollView;
+    topScrollView.scrollEnabled = NO;
 }
 
 - (void)setFrontViewController:(UIViewController *)frontController backViewController:(UIViewController *)backController
