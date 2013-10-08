@@ -28,5 +28,6 @@
 @property (nonatomic, assign) NSObject <FirstViewDelegate> *delegate;
 
 - (void)populateView:(UIImage *)image;
+- (void)selectRowAtPoint:(CGPoint)point;
 
 @end

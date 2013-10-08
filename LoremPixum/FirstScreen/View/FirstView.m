@@ -26,6 +26,22 @@
     [tableView reloadData];
 }
 
+- (void)selectRowAtPoint:(CGPoint)point
+{
+    NSLog(@"selectrowatpoint");
+    for(int index = 0; index < [self tableView:tableView numberOfRowsInSection:1]; index++)
+    {
+        CGRect rectInTableView = [tableView rectForRowAtIndexPath:[NSIndexPath indexPathForItem:index inSection:1]];
+        CGRect frame = [tableView convertRect:rectInTableView toView:self];
+
+        if(CGRectContainsPoint(frame, point))
+        {
+            NSLog(@"found");
+            [self tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForItem:index inSection:1]];
+        }
+    }
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 2;
@@ -92,7 +108,9 @@
     CGRect rectInTableView = [_tableView rectForRowAtIndexPath:indexPath];
     CGRect frame = [_tableView convertRect:rectInTableView toView:self];
 
-    [self.delegate didSelectRowWithFrame:frame withImage:[dataSource objectAtIndex:indexPath.row]];
+    CGRect croppedFrame = CGRectMake(frame.origin.x, frame.origin.y +2, frame.size.width, frame.size.height -4);
+
+    [self.delegate didSelectRowWithFrame:croppedFrame withImage:[dataSource objectAtIndex:indexPath.row]];
 }
 
 - (UIImage *)croppedImageForRow:(int)row
@@ -102,7 +120,7 @@
     {
         return [croppedImages objectForKey:key];
     }
-    UIImage *croppedImage = [self cropImage:[dataSource objectAtIndex:row] withRect:CGRectMake(0, 234*2 , 640, 192)];
+    UIImage *croppedImage = [self cropImage:[dataSource objectAtIndex:row] withRect:CGRectMake(0, 234*2 , 640, 196)];
     [croppedImages setObject:croppedImage forKey:key];
     return croppedImage;
 }
@@ -112,15 +130,6 @@
     CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
     [UIImage imageWithCGImage:imageRef];
     return [UIImage imageWithCGImage:imageRef];
-}
-
-- (UIImage *)screenShot
-{
-    UIGraphicsBeginImageContext(self.frame.size);
-    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *screenImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return screenImage;
 }
 
 @end

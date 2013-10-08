@@ -15,6 +15,7 @@
 @implementation FirstScreenController
 {
     AnimateOpenImage *transitionAnimation;
+    BOOL interactiveTransition;
 }
 
 - (void)viewDidLoad
@@ -35,10 +36,36 @@
                 [firstView populateView:image];
         }];
     }
-
+    interactiveTransition = NO;
     transitionAnimation = [[AnimateOpenImage alloc] init];
     percentDrivenInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
     self.navigationController.delegate = self;
+
+    [self.view addGestureRecognizer:[[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(didReceivePinchGesture:)]];
+}
+
+- (void)didReceivePinchGesture:(UIPinchGestureRecognizer *)pinchGestureRecognizer
+{
+    if(pinchGestureRecognizer.state == UIGestureRecognizerStateBegan)
+    {
+        interactiveTransition = YES;
+        CGPoint pinchLocation = [pinchGestureRecognizer locationInView:self.view];
+        FirstView *_firstView = (FirstView *)self.view;
+        [_firstView selectRowAtPoint:pinchLocation];
+    }
+    else if(pinchGestureRecognizer.state == UIGestureRecognizerStateChanged)
+    {
+        NSLog(@"scale = %f", pinchGestureRecognizer.scale);
+        [percentDrivenInteractiveTransition updateInteractiveTransition:pinchGestureRecognizer.scale - 1];
+    }
+    else if(pinchGestureRecognizer.state == UIGestureRecognizerStateEnded)
+    {
+        if(pinchGestureRecognizer.velocity > 0)
+            [percentDrivenInteractiveTransition finishInteractiveTransition];
+        else
+            [percentDrivenInteractiveTransition cancelInteractiveTransition];
+        interactiveTransition = NO;
+    }
 }
 
 - (void)loadView
@@ -68,11 +95,13 @@
 {
     return transitionAnimation;
 }
-//
-//- (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>)animationController
-//{
-//    return percentDrivenInteractiveTransition;
-//}
 
+- (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>)animationController
+{
+    if(interactiveTransition)
+        return percentDrivenInteractiveTransition;
+    else
+        return nil;
+}
 
 @end
