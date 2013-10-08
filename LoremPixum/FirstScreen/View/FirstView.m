@@ -92,7 +92,7 @@
     CGRect rectInTableView = [_tableView rectForRowAtIndexPath:indexPath];
     CGRect frame = [_tableView convertRect:rectInTableView toView:self];
 
-    [self.delegate didSelectRowWithFrame:frame];
+    [self.delegate didSelectRowWithFrame:frame withImage:[dataSource objectAtIndex:indexPath.row]];
 }
 
 - (UIImage *)croppedImageForRow:(int)row

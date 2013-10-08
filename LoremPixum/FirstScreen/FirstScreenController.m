@@ -46,10 +46,11 @@
 }
 
 
-- (void)didSelectRowWithFrame:(CGRect)frame
+- (void)didSelectRowWithFrame:(CGRect)frame withImage:(UIImage *)image
 {
     transitionAnimation.rowFrame = frame;
     SecondScreenController *secondScreenController = [[SecondScreenController alloc] initWithNibName:@"SecondScreenView" bundle:nil];
+    [secondScreenController setBackgroundImage:image];
     self.navigationController.delegate = self;
     [self.navigationController pushViewController:secondScreenController animated:YES];
 }

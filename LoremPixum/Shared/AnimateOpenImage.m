@@ -8,14 +8,17 @@
 
 #import "AnimateOpenImage.h"
 #import "SecondScreenController.h"
-#import "SecondScreenImagePack.h"
 #import "FirstView.h"
 #import "FirstScreenController.h"
 #import "SecondScreenView.h"
 
 
 @implementation AnimateOpenImage {
-
+    CGRect firstScreenFrame;
+    CGRect beforeTransitionUpperFrame;
+    CGRect beforeTransitionLowerFrame;
+    UIImage *upperImage;
+    UIImage *lowerImage;
 }
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
@@ -25,48 +28,97 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    // 1. obtain state from the context
-    SecondScreenController *secondScreenController = (SecondScreenController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    [secondScreenController setBackgroundImage:[UIImage imageNamed:@"gowno.jpg"]];
-    FirstScreenController *firstScreenController= (FirstScreenController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    // 2. obtain the container view
+    BOOL pushTransition;
+    SecondScreenController *secondScreenController;
+    FirstScreenController *firstScreenController;
+    if([[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey] isKindOfClass:[SecondScreenController class] ])
+    {
+        pushTransition = YES;
+        secondScreenController = (SecondScreenController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+        firstScreenController= (FirstScreenController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+        firstScreenFrame = firstScreenController.view.frame;
+    }
+    else
+    {
+        pushTransition = NO;
+        secondScreenController = (SecondScreenController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+        firstScreenController= (FirstScreenController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    }
+
     UIView *containerView = [transitionContext containerView];
+
+    SecondScreenView *secondScreenView = (SecondScreenView *)secondScreenController.view;
 
     UIImage *screenShot = [self screenShotFromView:firstScreenController.view];
 
-    CGRect upperRect = CGRectMake(0, 0, _rowFrame.size.width, _rowFrame.origin.y);
-    CGFloat rowBottom = _rowFrame.origin.y + _rowFrame.size.height;
-    CGRect lowerRect = CGRectMake(0, rowBottom, _rowFrame.size.width, screenShot.size.height - rowBottom);
+    UIImageView *upperImageView;
+    UIImageView *lowerImageView;
 
-    UIImage *upperImage = [self cropImage:screenShot withRect:upperRect];
-    UIImage *lowerImage = [self cropImage:screenShot withRect:lowerRect];
+    if(pushTransition) {
+        beforeTransitionUpperFrame = CGRectMake(0, 0, _rowFrame.size.width, _rowFrame.origin.y);
+        CGFloat rowBottom = _rowFrame.origin.y + _rowFrame.size.height;
+        beforeTransitionLowerFrame = CGRectMake(0, rowBottom, _rowFrame.size.width, screenShot.size.height - rowBottom);
 
-    UIImageView *upperImageView = [[UIImageView alloc] initWithImage:upperImage];
-    upperImageView.frame = upperRect;
+        upperImage = [self cropImage:screenShot withRect:beforeTransitionUpperFrame];
+        lowerImage = [self cropImage:screenShot withRect:beforeTransitionLowerFrame];
 
-    UIImageView *lowerImageView = [[UIImageView alloc] initWithImage:lowerImage];
-    lowerImageView.frame = lowerRect;
+        upperImageView = [[UIImageView alloc] initWithImage:upperImage];
+        upperImageView.frame = beforeTransitionUpperFrame;
 
-    [containerView addSubview:secondScreenController.view];
-    [containerView addSubview:upperImageView];
-    [containerView addSubview:lowerImageView];
+        lowerImageView = [[UIImageView alloc] initWithImage:lowerImage];
+        lowerImageView.frame = beforeTransitionLowerFrame;
 
+        secondScreenView.backgroundImageView.center = [self getFrameCenter:_rowFrame];
+
+        [containerView addSubview:secondScreenController.view];
+        [containerView addSubview:upperImageView];
+        [containerView addSubview:lowerImageView];
+    }
+    else
+    {
+        upperImageView = [[UIImageView alloc] initWithImage:upperImage];
+        upperImageView.frame = CGRectMake(0, -beforeTransitionUpperFrame.size.height, beforeTransitionUpperFrame.size.width, beforeTransitionUpperFrame.size.height);
+
+        lowerImageView = [[UIImageView alloc] initWithImage:lowerImage];
+        lowerImageView.frame = CGRectMake(0, secondScreenView.frame.size.height, beforeTransitionLowerFrame.size.width, beforeTransitionLowerFrame.size.height);
+
+        [containerView addSubview:upperImageView];
+        [containerView addSubview:lowerImageView];
+        firstScreenController.view.frame = firstScreenFrame;
+    }
 
     // 5. animate
     NSTimeInterval duration = [self transitionDuration:transitionContext];
 
     [UIView animateWithDuration:duration animations:^{
-
-        lowerImageView.frame = CGRectMake(0, 600, 320, 500);
-        upperImageView.frame = CGRectMake(0, -500, 320, 500);
+        if(pushTransition) {
+            lowerImageView.frame = CGRectMake(0, secondScreenView.frame.size.height, lowerImageView.frame.size.width, lowerImageView.frame.size.height);
+            upperImageView.frame = CGRectMake(0, -upperImageView.frame.size.height, upperImageView.frame.size.width, upperImageView.frame.size.height);
+            secondScreenView.backgroundImageView.center = ((SecondScreenView *)secondScreenController.view).center;
+        }
+        else
+        {
+            lowerImageView.frame = beforeTransitionLowerFrame;
+            upperImageView.frame = beforeTransitionUpperFrame;
+            secondScreenView.backgroundImageView.center = [self getFrameCenter:_rowFrame];
+        }
 
     } completion:^(BOOL finished) {
 
-        // 6. inform the context of completion
+        [upperImageView removeFromSuperview];
+        [lowerImageView removeFromSuperview];
         [transitionContext completeTransition:YES];
+
+        if(!pushTransition)
+            [containerView addSubview:firstScreenController.view];
 
     }];
 
+}
+
+- (CGPoint)getFrameCenter:(CGRect)rect
+{
+    return CGPointMake(rect.origin.x+rect.size.width/2, rect.origin.y+rect.size.height/2);
 }
 
 - (UIImage *)cropImage:(UIImage *)image withRect:(CGRect)rect

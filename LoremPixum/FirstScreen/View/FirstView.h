@@ -14,7 +14,7 @@
 @protocol FirstViewDelegate
 
 - (void)navigateToSecondView:(SecondScreenImagePack *)imagePack;
-- (void)didSelectRowWithFrame:(CGRect)frame;
+- (void)didSelectRowWithFrame:(CGRect)frame withImage:(UIImage *)image;
 
 @end
 
