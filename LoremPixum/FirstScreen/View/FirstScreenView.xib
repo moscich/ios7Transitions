@@ -34,6 +34,7 @@
                 <constraint firstAttribute="trailing" secondItem="b3s-qA-6cP" secondAttribute="trailing" id="uid-fh-Cep"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
                 <outlet property="tableView" destination="b3s-qA-6cP" id="hgz-c1-BZw"/>

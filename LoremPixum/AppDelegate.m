@@ -28,6 +28,7 @@
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstScreenController];
     MainControllerContainer *controllerContainer = [[MainControllerContainer alloc] initWithFrontViewController:navigationController backViewController:menuViewController];
+    firstScreenController.delegate = controllerContainer;
     self.window.rootViewController = controllerContainer;
     [self.window addSubview:controllerContainer.view];
     return YES;

@@ -68,6 +68,7 @@
         else
             [percentDrivenInteractiveTransition cancelInteractiveTransition];
         gestureAccepted = YES;
+        interactiveTransition = NO;
     }
 }
 

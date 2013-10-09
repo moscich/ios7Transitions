@@ -28,7 +28,6 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    NSLog(@"canceled = %d", transitionContext.transitionWasCancelled);
     BOOL pushTransition;
     SecondScreenController *secondScreenController;
     FirstScreenController *firstScreenController;

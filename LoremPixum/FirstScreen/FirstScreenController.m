@@ -10,6 +10,7 @@
 #import "LoremPixumImporter.h"
 #import "SecondScreenController.h"
 #import "AnimateOpenImage.h"
+#import "ContainerControllerProtocol.h"
 
 
 @implementation FirstScreenController
@@ -20,6 +21,9 @@
 
 - (void)viewDidLoad
 {
+    UIBarButtonItem *openBottomControllerInContainer = [[UIBarButtonItem alloc] initWithTitle:@"Hey" style:UIBarButtonItemStylePlain target:self.delegate action:@selector(presentBottomController)];
+    self.navigationItem.leftBarButtonItem = openBottomControllerInContainer;
+
     FirstView *_firstView = (FirstView *)self.view;
     _firstView.delegate = self;
 
@@ -55,7 +59,7 @@
     }
     else if(pinchGestureRecognizer.state == UIGestureRecognizerStateChanged)
     {
-        NSLog(@"scale = %f", pinchGestureRecognizer.scale);
+
         [percentDrivenInteractiveTransition updateInteractiveTransition:pinchGestureRecognizer.scale - 1];
     }
     else if(pinchGestureRecognizer.state == UIGestureRecognizerStateEnded)

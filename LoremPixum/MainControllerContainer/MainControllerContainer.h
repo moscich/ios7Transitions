@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "ContainerControllerProtocol.h"
 
+@protocol MainControllerContainerDelegate
+- (void)presentBottomController;
+@end
 
-@interface MainControllerContainer : UIViewController <ContainerControllerProtocol>
+@interface MainControllerContainer : UIViewController <ContainerControllerProtocol, MainControllerContainerDelegate>
 {
     UIViewController *topController;
     UIViewController *bottomController;

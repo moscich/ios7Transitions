@@ -17,7 +17,6 @@
 		49F44695443567128B1450E9 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F449769B10C9A59C31F784 /* MenuView.xib */; };
 		49F44720AE58233F5343B7F1 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44409196211BCCEE5870A /* FirstView.m */; };
 		49F447AD9A3BE451907CDE06 /* SecondScreenImagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F445E2AED384352C624444 /* SecondScreenImagePack.m */; };
-		49F447B07D8E696C5B7686A4 /* gowno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49F44621A3FE819E19605923 /* gowno.jpg */; };
 		49F447DD0209360230ACDDB4 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4449866F1F721F91F42C3 /* MenuView.m */; };
 		49F448D1F2B3F585BB8EFD61 /* FirstViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F44E1568A3346601D91084 /* FirstViewHeaderCell.xib */; };
 		49F449AC89919D21FDA76F53 /* SecondScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44C5B00D19FD036C8E788 /* SecondScreenView.m */; };
@@ -69,7 +68,6 @@
 		49F444EEC4E767EB2796EF52 /* FirstScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScreenController.m; sourceTree = "<group>"; };
 		49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoremPixumImporter.m; sourceTree = "<group>"; };
 		49F445E2AED384352C624444 /* SecondScreenImagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenImagePack.m; sourceTree = "<group>"; };
-		49F44621A3FE819E19605923 /* gowno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gowno.jpg; sourceTree = "<group>"; };
 		49F44651CF85B3F8613D533D /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		49F446E3AC0352D094661997 /* ImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewCell.h; sourceTree = "<group>"; };
 		49F447099226E4873300193A /* MainControllerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainControllerContainer.m; sourceTree = "<group>"; };
@@ -311,7 +309,6 @@
 				C180A13D17FDCDC60005519F /* InfoPlist.strings */,
 				C180A14017FDCDC60005519F /* main.m */,
 				C180A14217FDCDC60005519F /* LoremPixum-Prefix.pch */,
-				49F44621A3FE819E19605923 /* gowno.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -415,7 +412,6 @@
 				C180A14A17FDCDC60005519F /* Images.xcassets in Resources */,
 				49F444990206256B106DAE8F /* FirstScreenView.xib in Resources */,
 				49F44D70B9081CE2142ABA5E /* ImageViewCell.xib in Resources */,
-				49F447B07D8E696C5B7686A4 /* gowno.jpg in Resources */,
 				49F44F27243207ECCB8E29F5 /* SecondScreenView.xib in Resources */,
 				49F448D1F2B3F585BB8EFD61 /* FirstViewHeaderCell.xib in Resources */,
 				49F44695443567128B1450E9 /* MenuView.xib in Resources */,

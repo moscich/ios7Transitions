@@ -54,7 +54,6 @@
     [self.view insertSubview:bottomController.view belowSubview:topScrollView];
     ((MainContainerView *)self.view).menuView = bottomController.view;
     ((MainContainerView *)self.view).scrollView = topScrollView;
-    topScrollView.scrollEnabled = NO;
 }
 
 - (void)setFrontViewController:(UIViewController *)frontController backViewController:(UIViewController *)backController
@@ -64,6 +63,13 @@
     [self initChildViewControllers];
 }
 
+- (void)presentBottomController
+{
+    if([topScrollView contentOffset].x == 200)
+        [topScrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+    else
+        [topScrollView setContentOffset:CGPointMake(200, 0) animated:YES];
+}
 
 
 @end

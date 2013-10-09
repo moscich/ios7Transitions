@@ -28,7 +28,6 @@
 
 - (void)selectRowAtPoint:(CGPoint)point
 {
-    NSLog(@"selectrowatpoint");
     for(int index = 0; index < [self tableView:tableView numberOfRowsInSection:1]; index++)
     {
         CGRect rectInTableView = [tableView rectForRowAtIndexPath:[NSIndexPath indexPathForItem:index inSection:1]];
@@ -36,7 +35,6 @@
 
         if(CGRectContainsPoint(frame, point))
         {
-            NSLog(@"found");
             [self tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForItem:index inSection:1]];
         }
     }
