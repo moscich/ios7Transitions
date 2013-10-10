@@ -31,7 +31,7 @@
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ICc-u8-vLz" secondAttribute="bottom" id="3ib-cG-aGB"/>
                 <constraint firstItem="RhH-i5-vxb" firstAttribute="trailing" secondItem="ICc-u8-vLz" secondAttribute="trailing" id="Qch-p3-Hx7"/>

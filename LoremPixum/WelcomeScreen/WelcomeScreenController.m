@@ -12,6 +12,7 @@
 #import "LoremPixumImporter.h"
 #import "WelcomeScreenView.h"
 #import "FirstScreenController.h"
+#import "WelcomeOpenAnimation.h"
 
 
 @implementation WelcomeScreenController {
@@ -38,7 +39,13 @@
 - (void)didSelect:(enum LowerUpperView)lowerUpperView
 {
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
+    self.navigationController.delegate = self;
     [self.navigationController setViewControllers:[NSArray arrayWithObject:firstScreenController ] animated:YES];
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+    return [[WelcomeOpenAnimation alloc] init];
 }
 
 @end

@@ -51,6 +51,7 @@
     topController.view.frame = CGRectMake(200, 0, topController.view.frame.size.width, topController.view.frame.size.height);
     [topScrollView setContentSize:CGSizeMake(200 + topController.view.frame.size.width, topController.view.frame.size.height)];
     [topScrollView setContentOffset:CGPointMake(200, 0)];
+    topScrollView.bounces = NO;
     [self.view insertSubview:bottomController.view belowSubview:topScrollView];
     ((MainContainerView *)self.view).menuView = bottomController.view;
     ((MainContainerView *)self.view).scrollView = topScrollView;

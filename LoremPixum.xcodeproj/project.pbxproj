@@ -25,6 +25,7 @@
 		49F449AC89919D21FDA76F53 /* SecondScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44C5B00D19FD036C8E788 /* SecondScreenView.m */; };
 		49F44A4B2D8E357D01AA076B /* SecondScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F442852A70C540324A4494 /* SecondScreenController.m */; };
 		49F44B283CACD1E9DCD828BD /* LoremPixumImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */; };
+		49F44BE62BC1C3D1811817A7 /* WelcomeOpenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44A1B380B7EDA5892C445 /* WelcomeOpenAnimation.m */; };
 		49F44D70B9081CE2142ABA5E /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */; };
 		49F44F1EEAAD4AE2745CCD31 /* MainContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F449A5BE9812B97DD1022D /* MainContainerView.m */; };
 		49F44F27243207ECCB8E29F5 /* SecondScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F440B8A0091210026C931D /* SecondScreenView.xib */; };
@@ -82,6 +83,7 @@
 		49F449A5BE9812B97DD1022D /* MainContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContainerView.m; sourceTree = "<group>"; };
 		49F449E5179C5A0660E32D6D /* WelcomeScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreenView.m; sourceTree = "<group>"; };
 		49F44A0B7225D2FD2EBCDC48 /* AnimateOpenImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateOpenImage.h; sourceTree = "<group>"; };
+		49F44A1B380B7EDA5892C445 /* WelcomeOpenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeOpenAnimation.m; sourceTree = "<group>"; };
 		49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
 		49F44A7C04F6C574C7AD7205 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		49F44AB0C5F285D5B2AA5420 /* SecondScreenImagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenImagePack.h; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		49F44F3A1C3320FCC6C82061 /* MainControllerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainControllerContainer.h; sourceTree = "<group>"; };
 		49F44F783A043F974D9BF120 /* ImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewCell.m; sourceTree = "<group>"; };
 		49F44FA0A77E73FA2525A14B /* WelcomeScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenView.xib; sourceTree = "<group>"; };
+		49F44FD213E2F7C329F25663 /* WelcomeOpenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeOpenAnimation.h; sourceTree = "<group>"; };
 		BB0984282CFB4097B422B036 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C180A12F17FDCDC60005519F /* LoremPixum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoremPixum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C180A13217FDCDC60005519F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -191,6 +194,8 @@
 			children = (
 				49F44359B94AD8ACB3A7C587 /* AnimateOpenImage.m */,
 				49F44A0B7225D2FD2EBCDC48 /* AnimateOpenImage.h */,
+				49F44A1B380B7EDA5892C445 /* WelcomeOpenAnimation.m */,
+				49F44FD213E2F7C329F25663 /* WelcomeOpenAnimation.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				49F4452F8621DA70C741CE8F /* AnimateOpenImage.m in Sources */,
 				49F441432A50F3CA9081A8EC /* WelcomeScreenController.m in Sources */,
 				49F445CE1923531D6ECE3071 /* WelcomeScreenView.m in Sources */,
+				49F44BE62BC1C3D1811817A7 /* WelcomeOpenAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

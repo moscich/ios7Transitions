@@ -12,7 +12,7 @@
 @protocol ContainerControllerProtocol;
 
 
-@interface WelcomeScreenController : UIViewController <WelcomeScreenViewDelegate>
+@interface WelcomeScreenController : UIViewController <WelcomeScreenViewDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, assign) NSObject <ContainerControllerProtocol> *delegate;
 
