@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad
 {
+    self.navigationController.navigationBarHidden = NO;
     UIBarButtonItem *openBottomControllerInContainer = [[UIBarButtonItem alloc] initWithTitle:@"Hey" style:UIBarButtonItemStylePlain target:self.delegate action:@selector(presentBottomController)];
     self.navigationItem.leftBarButtonItem = openBottomControllerInContainer;
 
@@ -76,7 +77,6 @@
 {
     [super loadView];
 }
-
 
 - (void)didSelectRowWithFrame:(CGRect)frame withImage:(UIImage *)image
 {

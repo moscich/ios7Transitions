@@ -31,6 +31,7 @@
 
 - (void)viewDidLoad
 {
+    self.navigationController.navigationBarHidden = YES;
     [self.view addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didReceivePanGesture:)]];
     percentDrivenInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
     interactiveTransition = NO;

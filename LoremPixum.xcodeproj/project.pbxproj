@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		49F440332569874AF09D36A9 /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44F783A043F974D9BF120 /* ImageViewCell.m */; };
+		49F44135FAF433E9E9CD42E7 /* WelcomeScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F44FA0A77E73FA2525A14B /* WelcomeScreenView.xib */; };
+		49F441432A50F3CA9081A8EC /* WelcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44841D907C39F995B0DE3 /* WelcomeScreenController.m */; };
 		49F442B3F22659D1DDF70193 /* FirstScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F444EEC4E767EB2796EF52 /* FirstScreenController.m */; };
 		49F444990206256B106DAE8F /* FirstScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F444A6F16287C2191F9D72 /* FirstScreenView.xib */; };
 		49F44523AC386EAE1C2E673E /* MainControllerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F447099226E4873300193A /* MainControllerContainer.m */; };
 		49F4452F8621DA70C741CE8F /* AnimateOpenImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44359B94AD8ACB3A7C587 /* AnimateOpenImage.m */; };
+		49F445CE1923531D6ECE3071 /* WelcomeScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F449E5179C5A0660E32D6D /* WelcomeScreenView.m */; };
 		49F445F1A9ED3B8347A38CC7 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44179871B6F90E2071D4D /* MenuViewController.m */; };
 		49F44683E753FFE497CEF43A /* LocalImageImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F441867FE8CB308D309393 /* LocalImageImporter.m */; };
 		49F44695443567128B1450E9 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F449769B10C9A59C31F784 /* MenuView.xib */; };
@@ -56,6 +59,7 @@
 /* Begin PBXFileReference section */
 		49F440B8A0091210026C931D /* SecondScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenView.xib; sourceTree = "<group>"; };
 		49F44179871B6F90E2071D4D /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		49F4417CE91669C5EE32DB78 /* WelcomeScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScreenView.h; sourceTree = "<group>"; };
 		49F441867FE8CB308D309393 /* LocalImageImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalImageImporter.m; sourceTree = "<group>"; };
 		49F441B78D27D945FEF5C5B1 /* LoremPixumImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoremPixumImporter.h; sourceTree = "<group>"; };
 		49F442852A70C540324A4494 /* SecondScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenController.m; sourceTree = "<group>"; };
@@ -71,9 +75,12 @@
 		49F44651CF85B3F8613D533D /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		49F446E3AC0352D094661997 /* ImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewCell.h; sourceTree = "<group>"; };
 		49F447099226E4873300193A /* MainControllerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainControllerContainer.m; sourceTree = "<group>"; };
+		49F447605E574EDF6AE0D037 /* WelcomeScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScreenController.h; sourceTree = "<group>"; };
+		49F44841D907C39F995B0DE3 /* WelcomeScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreenController.m; sourceTree = "<group>"; };
 		49F44919E8804DA3DDCB1DE4 /* ContainerControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerControllerProtocol.h; sourceTree = "<group>"; };
 		49F449769B10C9A59C31F784 /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		49F449A5BE9812B97DD1022D /* MainContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContainerView.m; sourceTree = "<group>"; };
+		49F449E5179C5A0660E32D6D /* WelcomeScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreenView.m; sourceTree = "<group>"; };
 		49F44A0B7225D2FD2EBCDC48 /* AnimateOpenImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateOpenImage.h; sourceTree = "<group>"; };
 		49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
 		49F44A7C04F6C574C7AD7205 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
@@ -87,6 +94,7 @@
 		49F44F2B9A0FA397A907C080 /* SecondScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScreenView.h; sourceTree = "<group>"; };
 		49F44F3A1C3320FCC6C82061 /* MainControllerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainControllerContainer.h; sourceTree = "<group>"; };
 		49F44F783A043F974D9BF120 /* ImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewCell.m; sourceTree = "<group>"; };
+		49F44FA0A77E73FA2525A14B /* WelcomeScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenView.xib; sourceTree = "<group>"; };
 		BB0984282CFB4097B422B036 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C180A12F17FDCDC60005519F /* LoremPixum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoremPixum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C180A13217FDCDC60005519F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -197,6 +205,16 @@
 			path = SecondScreen;
 			sourceTree = "<group>";
 		};
+		49F44743DEBA5FADF6BB6C81 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				49F44841D907C39F995B0DE3 /* WelcomeScreenController.m */,
+				49F447605E574EDF6AE0D037 /* WelcomeScreenController.h */,
+				49F44F3E201D823020A1F9A4 /* View */,
+			);
+			path = WelcomeScreen;
+			sourceTree = "<group>";
+		};
 		49F448F465056F5ED302E367 /* MenuViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +252,16 @@
 				49F44A7C04F6C574C7AD7205 /* MenuView.h */,
 				49F4449866F1F721F91F42C3 /* MenuView.m */,
 				49F449769B10C9A59C31F784 /* MenuView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49F44F3E201D823020A1F9A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49F449E5179C5A0660E32D6D /* WelcomeScreenView.m */,
+				49F4417CE91669C5EE32DB78 /* WelcomeScreenView.h */,
+				49F44FA0A77E73FA2525A14B /* WelcomeScreenView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +326,7 @@
 				49F441BE003BE59B3E57C458 /* MainControllerContainer */,
 				49F448F465056F5ED302E367 /* MenuViewController */,
 				49F444CEF2747606FE0FA478 /* Shared */,
+				49F44743DEBA5FADF6BB6C81 /* WelcomeScreen */,
 			);
 			path = LoremPixum;
 			sourceTree = "<group>";
@@ -415,6 +444,7 @@
 				49F44F27243207ECCB8E29F5 /* SecondScreenView.xib in Resources */,
 				49F448D1F2B3F585BB8EFD61 /* FirstViewHeaderCell.xib in Resources */,
 				49F44695443567128B1450E9 /* MenuView.xib in Resources */,
+				49F44135FAF433E9E9CD42E7 /* WelcomeScreenView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +512,8 @@
 				49F447DD0209360230ACDDB4 /* MenuView.m in Sources */,
 				49F44F1EEAAD4AE2745CCD31 /* MainContainerView.m in Sources */,
 				49F4452F8621DA70C741CE8F /* AnimateOpenImage.m in Sources */,
+				49F441432A50F3CA9081A8EC /* WelcomeScreenController.m in Sources */,
+				49F445CE1923531D6ECE3071 /* WelcomeScreenView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

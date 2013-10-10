@@ -11,6 +11,7 @@
 #import "MainControllerContainer.h"
 #import "SecondScreenController.h"
 #import "MenuViewController.h"
+#import "WelcomeScreenController.h"
 
 @implementation AppDelegate
 
@@ -26,9 +27,11 @@
     [self.window makeKeyAndVisible];
     MenuViewController *menuViewController = [[MenuViewController alloc] initWithNibName:@"MenuView" bundle:nil];
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstScreenController];
+    WelcomeScreenController *welcomeScreenController = [[WelcomeScreenController alloc] initWithNibName:@"WelcomeScreenView" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:welcomeScreenController];
     MainControllerContainer *controllerContainer = [[MainControllerContainer alloc] initWithFrontViewController:navigationController backViewController:menuViewController];
     firstScreenController.delegate = controllerContainer;
+    welcomeScreenController.delegate = controllerContainer;
     self.window.rootViewController = controllerContainer;
     [self.window addSubview:controllerContainer.view];
     return YES;
