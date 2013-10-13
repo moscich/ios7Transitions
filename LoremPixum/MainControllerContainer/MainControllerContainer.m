@@ -9,10 +9,17 @@
 #import "MainControllerContainer.h"
 #import "MenuView.h"
 #import "MainContainerView.h"
+#import "WelcomeScreenController.h"
+#import "FirstScreenController.h"
+#import "GridScreenController.h"
+#import "LoremPixumImporter.h"
+#import "GridScreenModel.h"
 
 
 @implementation MainControllerContainer {
-
+    WelcomeScreenController* welcomeScreenController;
+    FirstScreenController* firstScreenController;
+    GridScreenController* gridScreenController;
 }
 
 - (id)initWithFrontViewController:(UIViewController *)frontController backViewController:(UIViewController *)backController
@@ -55,6 +62,8 @@
     [self.view insertSubview:bottomController.view belowSubview:topScrollView];
     ((MainContainerView *)self.view).menuView = bottomController.view;
     ((MainContainerView *)self.view).scrollView = topScrollView;
+
+    [self didSelectItem:2];
 }
 
 - (void)setFrontViewController:(UIViewController *)frontController backViewController:(UIViewController *)backController
@@ -72,5 +81,31 @@
         [topScrollView setContentOffset:CGPointMake(200, 0) animated:YES];
 }
 
+- (void)didSelectItem:(int)item
+{
+    UINavigationController *navigationController = (UINavigationController *)topController;
+    switch(item)
+    {
+        case 0:
+            if(welcomeScreenController == nil)
+                welcomeScreenController = [[WelcomeScreenController alloc] initWithNibName:@"WelcomeScreenView" bundle:nil];
+            [navigationController setViewControllers:[NSArray arrayWithObject:welcomeScreenController] animated:NO];
+            break;
+        case 1:
+            if(firstScreenController == nil)
+                firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
+            [navigationController setViewControllers:[NSArray arrayWithObject:firstScreenController] animated:NO];
+            break;
+        case 2:
+            if(gridScreenController == nil)
+            {
+                gridScreenController = [[GridScreenController alloc] initWithNibName:@"DynamicsScreenView" bundle:nil];
+                gridScreenController.gridScreenModel = [[GridScreenModel alloc] initWithLorem:[[LoremPixumImporter alloc] init]];
+            }
+            [navigationController setViewControllers:[NSArray arrayWithObject:gridScreenController] animated:NO];
+            break;
+        default:break;
+    }
+}
 
 @end

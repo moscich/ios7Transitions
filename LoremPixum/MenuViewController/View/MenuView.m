@@ -20,17 +20,13 @@
     [dataSource addObject:@"Test 1"];
     [dataSource addObject:@"Truciek"];
     [dataSource addObject:@"Chałupka"];
-}
 
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-    NSLog(@"hittest");
-    return [super hitTest:point withEvent:event];
+    [tableView setContentInset:UIEdgeInsetsMake(20, 0, 0, 0)];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"CHuje");
+    [self.delegate didSelectItem:indexPath.row];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

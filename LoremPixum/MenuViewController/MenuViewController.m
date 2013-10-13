@@ -12,4 +12,15 @@
 @implementation MenuViewController {
 
 }
+- (void)didSelectItem:(int)item
+{
+    [self.delegate didSelectItem:item];
+}
+
+- (void)viewDidLoad
+{
+    MenuView *view = (MenuView *)self.view;
+    view.delegate = self;
+}
+
 @end

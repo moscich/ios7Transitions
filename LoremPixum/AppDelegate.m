@@ -33,12 +33,13 @@
     MenuViewController *menuViewController = [[MenuViewController alloc] initWithNibName:@"MenuView" bundle:nil];
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
     WelcomeScreenController *welcomeScreenController = [[WelcomeScreenController alloc] initWithNibName:@"WelcomeScreenView" bundle:nil];
-    GridScreenController *dynamicsScreenController = [[GridScreenController alloc] initWithNibName:@"DynamicsScreenView" bundle:nil];
-    dynamicsScreenController.gridScreenModel = [[GridScreenModel alloc] initWithLorem:[[LoremPixumImporter alloc] init]];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:dynamicsScreenController];
+    GridScreenController *gridScreenController = [[GridScreenController alloc] initWithNibName:@"DynamicsScreenView" bundle:nil];
+    gridScreenController.gridScreenModel = [[GridScreenModel alloc] initWithLorem:[[LoremPixumImporter alloc] init]];
+    UINavigationController *navigationController = [[UINavigationController alloc] init];
     MainControllerContainer *controllerContainer = [[MainControllerContainer alloc] initWithFrontViewController:navigationController backViewController:menuViewController];
     firstScreenController.delegate = controllerContainer;
     welcomeScreenController.delegate = controllerContainer;
+    menuViewController.delegate = controllerContainer;
     self.window.rootViewController = controllerContainer;
     [self.window addSubview:controllerContainer.view];
     return YES;

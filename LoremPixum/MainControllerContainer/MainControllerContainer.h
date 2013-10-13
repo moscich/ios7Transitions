@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "ContainerControllerProtocol.h"
+#import "MenuViewController.h"
 
 @protocol MainControllerContainerDelegate
 - (void)presentBottomController;
 @end
 
-@interface MainControllerContainer : UIViewController <ContainerControllerProtocol, MainControllerContainerDelegate>
+@interface MainControllerContainer : UIViewController <ContainerControllerProtocol, MainControllerContainerDelegate, MenuViewControllerDelegate>
 {
     UIViewController *topController;
     UIViewController *bottomController;
