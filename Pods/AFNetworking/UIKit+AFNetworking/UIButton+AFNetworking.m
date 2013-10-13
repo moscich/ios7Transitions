@@ -82,7 +82,7 @@ static char kAFBackgroundImageRequestOperationKey;
         placeholderImage:(UIImage *)placeholderImage
 {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
+    [request addValue:@"imageView/*" forHTTPHeaderField:@"Accept"];
 
     [self setImageForState:state withURLRequest:request placeholderImage:placeholderImage success:nil failure:nil];
 }
@@ -134,7 +134,7 @@ static char kAFBackgroundImageRequestOperationKey;
                   placeholderImage:(UIImage *)placeholderImage
 {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
+    [request addValue:@"imageView/*" forHTTPHeaderField:@"Accept"];
 
     [self setBackgroundImageForState:state withURLRequest:request placeholderImage:placeholderImage success:nil failure:nil];
 }

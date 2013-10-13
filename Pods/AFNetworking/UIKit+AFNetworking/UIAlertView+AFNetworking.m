@@ -66,10 +66,10 @@ static void AFGetAlertViewTitleAndMessageFromError(NSError *error, NSString * __
 
         NSError *error = notification.userInfo[AFNetworkingTaskDidFinishErrorKey];
         if (error) {
-            NSString *title, *message;
-            AFGetAlertViewTitleAndMessageFromError(error, &title, &message);
+            NSString *cellLabel, *message;
+            AFGetAlertViewTitleAndMessageFromError(error, &cellLabel, &message);
 
-            [[[UIAlertView alloc] initWithTitle:title message:message delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles, nil] show];
+            [[[UIAlertView alloc] initWithTitle:cellLabel message:message delegate:delegate cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles, nil] show];
         }
 
         [[NSNotificationCenter defaultCenter] removeObserver:observer name:AFNetworkingTaskDidFinishNotification object:notification.object];

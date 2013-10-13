@@ -12,6 +12,11 @@
 #import "SecondScreenController.h"
 #import "MenuViewController.h"
 #import "WelcomeScreenController.h"
+#import "PopUpDetailController.h"
+#import "GridScreenView.h"
+#import "GridScreenModel.h"
+#import "LoremPixumImporter.h"
+#import "GridScreenController.h"
 
 @implementation AppDelegate
 
@@ -28,7 +33,9 @@
     MenuViewController *menuViewController = [[MenuViewController alloc] initWithNibName:@"MenuView" bundle:nil];
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
     WelcomeScreenController *welcomeScreenController = [[WelcomeScreenController alloc] initWithNibName:@"WelcomeScreenView" bundle:nil];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:welcomeScreenController];
+    GridScreenController *dynamicsScreenController = [[GridScreenController alloc] initWithNibName:@"DynamicsScreenView" bundle:nil];
+    dynamicsScreenController.gridScreenModel = [[GridScreenModel alloc] initWithLorem:[[LoremPixumImporter alloc] init]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:dynamicsScreenController];
     MainControllerContainer *controllerContainer = [[MainControllerContainer alloc] initWithFrontViewController:navigationController backViewController:menuViewController];
     firstScreenController.delegate = controllerContainer;
     welcomeScreenController.delegate = controllerContainer;

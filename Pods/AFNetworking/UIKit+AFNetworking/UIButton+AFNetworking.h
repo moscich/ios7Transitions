@@ -38,41 +38,41 @@
 ///--------------------
 
 /**
- Asynchronously downloads an image from the specified URL, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
+ Asynchronously downloads an imageView from the specified URL, and sets it as the imageView for the specified state once the request is finished. Any previous imageView request for the receiver will be cancelled.
  
-  If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+  If the imageView is cached locally, the imageView is set immediately, otherwise the specified placeholder imageView will be set immediately, and then the remote imageView will be set once the request is finished.
  
  @param state The control state.
- @param url The URL used for the image request.
+ @param url The URL used for the imageView request.
  */
 - (void)setImageForState:(UIControlState)state
                  withURL:(NSURL *)url;
 
 /**
- Asynchronously downloads an image from the specified URL, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
+ Asynchronously downloads an imageView from the specified URL, and sets it as the imageView for the specified state once the request is finished. Any previous imageView request for the receiver will be cancelled.
  
- If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+ If the imageView is cached locally, the imageView is set immediately, otherwise the specified placeholder imageView will be set immediately, and then the remote imageView will be set once the request is finished.
  
  @param state The control state.
- @param url The URL used for the image request.
- @param placeholderImage The image to be set initially, until the image request finishes. If `nil`, the button will not change its image until the image request finishes.
+ @param url The URL used for the imageView request.
+ @param placeholderImage The imageView to be set initially, until the imageView request finishes. If `nil`, the button will not change its imageView until the imageView request finishes.
  */
 - (void)setImageForState:(UIControlState)state
                  withURL:(NSURL *)url
         placeholderImage:(UIImage *)placeholderImage;
 
 /**
- Asynchronously downloads an image from the specified URL request, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
+ Asynchronously downloads an imageView from the specified URL request, and sets it as the imageView for the specified state once the request is finished. Any previous imageView request for the receiver will be cancelled.
 
- If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+ If the imageView is cached locally, the imageView is set immediately, otherwise the specified placeholder imageView will be set immediately, and then the remote imageView will be set once the request is finished.
  
- If a success block is specified, it is the responsibility of the block to set the image of the button before returning. If no success block is specified, the default behavior of setting the image with `setImage:forState:` is applied.
+ If a success block is specified, it is the responsibility of the block to set the imageView of the button before returning. If no success block is specified, the default behavior of setting the imageView with `setImage:forState:` is applied.
 
  @param state The control state.
- @param urlRequest The URL request used for the image request.
- @param placeholderImage The image to be set initially, until the image request finishes. If `nil`, the button will not change its image until the image request finishes.
- @param success A block to be executed when the image request operation finishes successfully. This block has no return value and takes two arguments: the server response and the image. If the image was returned from cache, the request and response parameters will be `nil`.
- @param failure A block object to be executed when the image request operation finishes unsuccessfully, or that finishes successfully. This block has no return value and takes a single argument: the error that occurred.
+ @param urlRequest The URL request used for the imageView request.
+ @param placeholderImage The imageView to be set initially, until the imageView request finishes. If `nil`, the button will not change its imageView until the imageView request finishes.
+ @param success A block to be executed when the imageView request operation finishes successfully. This block has no return value and takes two arguments: the server response and the imageView. If the imageView was returned from cache, the request and response parameters will be `nil`.
+ @param failure A block object to be executed when the imageView request operation finishes unsuccessfully, or that finishes successfully. This block has no return value and takes a single argument: the error that occurred.
  */
 - (void)setImageForState:(UIControlState)state
           withURLRequest:(NSURLRequest *)urlRequest
@@ -86,39 +86,39 @@
 ///-------------------------------
 
 /**
- Asynchronously downloads an image from the specified URL, and sets it as the background image for the specified state once the request is finished. Any previous background image request for the receiver will be cancelled.
+ Asynchronously downloads an imageView from the specified URL, and sets it as the background imageView for the specified state once the request is finished. Any previous background imageView request for the receiver will be cancelled.
 
- If the background image is cached locally, the background image is set immediately, otherwise the specified placeholder background image will be set immediately, and then the remote background image will be set once the request is finished.
+ If the background imageView is cached locally, the background imageView is set immediately, otherwise the specified placeholder background imageView will be set immediately, and then the remote background imageView will be set once the request is finished.
 
  @param state The control state.
- @param url The URL used for the background image request.
+ @param url The URL used for the background imageView request.
  */
 - (void)setBackgroundImageForState:(UIControlState)state
                            withURL:(NSURL *)url;
 
 /**
- Asynchronously downloads an image from the specified URL, and sets it as the background image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
+ Asynchronously downloads an imageView from the specified URL, and sets it as the background imageView for the specified state once the request is finished. Any previous imageView request for the receiver will be cancelled.
 
- If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+ If the imageView is cached locally, the imageView is set immediately, otherwise the specified placeholder imageView will be set immediately, and then the remote imageView will be set once the request is finished.
 
  @param state The control state.
- @param url The URL used for the background image request.
- @param placeholderImage The background image to be set initially, until the background image request finishes. If `nil`, the button will not change its background image until the background image request finishes.
+ @param url The URL used for the background imageView request.
+ @param placeholderImage The background imageView to be set initially, until the background imageView request finishes. If `nil`, the button will not change its background imageView until the background imageView request finishes.
  */
 - (void)setBackgroundImageForState:(UIControlState)state
                            withURL:(NSURL *)url
                   placeholderImage:(UIImage *)placeholderImage;
 
 /**
- Asynchronously downloads an image from the specified URL request, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
+ Asynchronously downloads an imageView from the specified URL request, and sets it as the imageView for the specified state once the request is finished. Any previous imageView request for the receiver will be cancelled.
 
- If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+ If the imageView is cached locally, the imageView is set immediately, otherwise the specified placeholder imageView will be set immediately, and then the remote imageView will be set once the request is finished.
 
- If a success block is specified, it is the responsibility of the block to set the image of the button before returning. If no success block is specified, the default behavior of setting the image with `setBackgroundImage:forState:` is applied.
+ If a success block is specified, it is the responsibility of the block to set the imageView of the button before returning. If no success block is specified, the default behavior of setting the imageView with `setBackgroundImage:forState:` is applied.
 
  @param state The control state.
- @param urlRequest The URL request used for the image request.
- @param placeholderImage The background image to be set initially, until the background image request finishes. If `nil`, the button will not change its background image until the background image request finishes.
+ @param urlRequest The URL request used for the imageView request.
+ @param placeholderImage The background imageView to be set initially, until the background imageView request finishes. If `nil`, the button will not change its background imageView until the background imageView request finishes.
  */
 - (void)setBackgroundImageForState:(UIControlState)state
                     withURLRequest:(NSURLRequest *)urlRequest
@@ -132,12 +132,12 @@
 ///------------------------------
 
 /**
- Cancels any executing image operation for the receiver, if one exists.
+ Cancels any executing imageView operation for the receiver, if one exists.
  */
 - (void)cancelImageRequestOperation;
 
 /**
- Cancels any executing background image operation for the receiver, if one exists.
+ Cancels any executing background imageView operation for the receiver, if one exists.
  */
 - (void)cancelBackgroundImageRequestOperation;
 
