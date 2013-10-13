@@ -21,6 +21,8 @@
 }
 
 @property (nonatomic, assign) id <GridScreenViewDelegate> delegate;
+@property (nonatomic, retain) IBOutlet UIImageView *blurImageView;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 
 - (void)populateView:(NSMutableArray *)dataSource;
 - (void)populateGridCell:(GridItem *)gridItem;

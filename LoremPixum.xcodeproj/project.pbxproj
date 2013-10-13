@@ -37,6 +37,7 @@
 		49F44BB48157B2553739035E /* GridCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F447C76823CF13B87F1AA2 /* GridCellView.xib */; };
 		49F44BE62BC1C3D1811817A7 /* WelcomeOpenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44A1B380B7EDA5892C445 /* WelcomeOpenAnimation.m */; };
 		49F44C64FC11AE3DCF4B962A /* PopUpDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44E8BC75FC999BFCF8976 /* PopUpDetailController.m */; };
+		49F44D026BFE5335B7E3F70E /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F440ADCFB0D769A4B4FBAC /* FXBlurView.m */; };
 		49F44D70B9081CE2142ABA5E /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F44A5BF2DE980B63CE13FD /* ImageViewCell.xib */; };
 		49F44E166D7B0F68468A8D58 /* GridScreenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F44BA5B63946CC8217737F /* GridScreenModel.m */; };
 		49F44E94DFB8FA487B11C6E0 /* GridScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4423A8AC5D9E93D265053 /* GridScreenController.m */; };
@@ -72,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49F440ADCFB0D769A4B4FBAC /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		49F440B8A0091210026C931D /* SecondScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenView.xib; sourceTree = "<group>"; };
 		49F44179871B6F90E2071D4D /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		49F4417CE91669C5EE32DB78 /* WelcomeScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScreenView.h; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		49F4449866F1F721F91F42C3 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 		49F444A6F16287C2191F9D72 /* FirstScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenView.xib; sourceTree = "<group>"; };
 		49F444EEC4E767EB2796EF52 /* FirstScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScreenController.m; sourceTree = "<group>"; };
+		49F4450092E880E9751C29E8 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
 		49F4459D480DE68E1C4249AB /* LoremPixumImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoremPixumImporter.m; sourceTree = "<group>"; };
 		49F445E2AED384352C624444 /* SecondScreenImagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScreenImagePack.m; sourceTree = "<group>"; };
 		49F44618C4ECE25B7F6B9CBA /* PopUpDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpDetailModel.m; sourceTree = "<group>"; };
@@ -304,6 +307,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		49F446090F83FCE05EF9E1F9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				49F4450092E880E9751C29E8 /* FXBlurView.h */,
+				49F440ADCFB0D769A4B4FBAC /* FXBlurView.m */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		49F446144BC23C232546F85F /* GridCellView */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +472,7 @@
 				49F444CEF2747606FE0FA478 /* Animations */,
 				49F44743DEBA5FADF6BB6C81 /* WelcomeScreen */,
 				49F44ED7E63CCF9DA7759EA2 /* GridScreen */,
+				49F446090F83FCE05EF9E1F9 /* Libraries */,
 			);
 			path = LoremPixum;
 			sourceTree = "<group>";
@@ -662,6 +675,7 @@
 				49F4476770CE04EA13DA4AD0 /* GridItem.m in Sources */,
 				49F44E94DFB8FA487B11C6E0 /* GridScreenController.m in Sources */,
 				49F445C16876DA00F1B787DD /* PopUpDetailModel.m in Sources */,
+				49F44D026BFE5335B7E3F70E /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

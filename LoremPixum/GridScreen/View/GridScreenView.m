@@ -30,13 +30,14 @@
     for(int i = 0;i < dataSource.count; i++)
     {
         GridCellView *gridCell = [[[NSBundle mainBundle] loadNibNamed:@"GridCellView" owner:self options:nil] lastObject];
-        gridCell.center = CGPointMake( i % 2 ? self.center.x*0.5 : self.center.x*1.5, 50 + i/2*130);
+        gridCell.center = CGPointMake( i % 2 ? _scrollView.center.x*0.5 : _scrollView.center.x*1.5, 80 + i/2*130);
         gridCell.tag = i;
         [gridCell addTarget:self action:@selector(gridItemWasSelected:) forControlEvents:UIControlEventTouchUpInside];
 
-        [self addSubview:gridCell];
+        [_scrollView addSubview:gridCell];
         [cells addObject:gridCell];
     }
+    _scrollView.contentSize = CGSizeMake(_scrollView.frame.size.width, 150 + (dataSource.count-1)/2 *130);
 }
 
 - (void)populateGridCell:(GridItem *)gridItem
