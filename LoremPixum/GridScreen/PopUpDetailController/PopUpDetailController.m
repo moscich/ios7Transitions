@@ -11,10 +11,12 @@
 #import "PopUpDetailModel.h"
 #import "GridItem.h"
 #import "PopUpDetailView.h"
+#import "GridToDetailAnimation.h"
 
 
 @implementation PopUpDetailController {
     int currentlyDisplayedGridItem;
+    UIPercentDrivenInteractiveTransition *percentDrivenInteractiveTransition;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil gridItem:(int)gridItem
@@ -30,11 +32,12 @@
 - (void)viewDidLoad
 {
     _popUpDetailModel.delegate = self;
-    [_popUpDetailModel requestGridItem:currentlyDisplayedGridItem];
 
     PopUpDetailView *view = (PopUpDetailView *)self.view;
     view.delegate = self;
     [view populatePopUpDetailView:[self.delegate loadedGridItems]];
+
+    [self requestNearGridItems:currentlyDisplayedGridItem];
 }
 
 - (void)didReceiveGridItem:(GridItem *)gridItem
@@ -53,5 +56,51 @@
     return currentlyDisplayedGridItem;
 }
 
+- (void)didDisplayItem:(int)item
+{
+    currentlyDisplayedGridItem = item;
+    [self requestNearGridItems:currentlyDisplayedGridItem];
+}
+
+- (void)didDragScrollViewDown:(float)percent
+{
+    if(percentDrivenInteractiveTransition == nil)
+        percentDrivenInteractiveTransition = [self.delegate startPopAnimation];
+
+    [percentDrivenInteractiveTransition updateInteractiveTransition:percent];
+}
+
+- (void)didEndDraggingScrollView:(BOOL)finished
+{
+    if(percentDrivenInteractiveTransition != nil)
+    {
+        if(finished)
+        {
+            [percentDrivenInteractiveTransition finishInteractiveTransition];
+        }
+        else
+        {
+            [percentDrivenInteractiveTransition cancelInteractiveTransition];
+        }
+
+        percentDrivenInteractiveTransition = nil;
+    }
+}
+
+- (void)requestNearGridItems:(int)item
+{
+    NSMutableArray *dataSource = [self.delegate loadedGridItems];
+    for(int i = item - 1 >= 0 ? item -1 : 0; i <= item + 1 && i < dataSource.count; i++)
+    {
+        GridItem *gridItem = [dataSource objectAtIndex:i];
+        if(gridItem.image == nil)
+            [_popUpDetailModel requestGridItem:i];
+        else
+        {
+            PopUpDetailView *view = (PopUpDetailView *)self.view;
+            [view populateGridDetailCell:gridItem];
+        }
+    }
+}
 
 @end

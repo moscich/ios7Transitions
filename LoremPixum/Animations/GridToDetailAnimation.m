@@ -7,6 +7,7 @@
 
 
 #import "GridToDetailAnimation.h"
+#import "PopUpDetailController.h"
 
 
 @implementation GridToDetailAnimation {
@@ -19,16 +20,35 @@
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
     UIViewController *viewController =[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    UIViewController *fromViewController =[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIView *container = [transitionContext containerView];
 
-    [container addSubview:viewController.view];
-
-    viewController.view.center = CGPointMake(container.center.x, container.center.y + 1000);
-
+    BOOL popAnimation = NO;
+    if(![viewController isKindOfClass:[PopUpDetailController class]])
+    {
+        popAnimation = YES;
+    }
+    if(!popAnimation)
+    {
+        [container addSubview:viewController.view];
+        viewController.view.center = CGPointMake(container.center.x, container.center.y + 1000);
+    }
     [UIView animateWithDuration:1.0 animations:^{
-        viewController.view.center = container.center;
+        if(!popAnimation)
+        {
+            viewController.view.center = container.center;
+            fromViewController.view.alpha = 0.5;
+        }
+        else
+        {
+            viewController.view.alpha = 1.0;
+            fromViewController.view.center = CGPointMake(container.center.x, container.center.y + 1000);
+        }
     } completion:^(BOOL completed){
-        [transitionContext completeTransition:YES];
+        if(popAnimation && !transitionContext.transitionWasCancelled)
+            [fromViewController.view removeFromSuperview];
+
+        [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
     }];
 }
 

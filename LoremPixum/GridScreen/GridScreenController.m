@@ -17,14 +17,8 @@
 
 
 @implementation GridScreenController {
+    UIPercentDrivenInteractiveTransition *percentDrivenInteractiveTransition;
 
-}
-- (IBAction)buttonPressed
-{
-    PopUpDetailController *detailController = [[PopUpDetailController alloc] initWithNibName:@"PopUpDetailView" bundle:nil];
-    detailController.modalPresentationStyle = UIModalPresentationCustom;
-    detailController.transitioningDelegate = self;
-    [self presentViewController:detailController animated:YES completion:nil];
 }
 
 - (void)viewDidLoad
@@ -41,11 +35,23 @@
     GridScreenView *view = (GridScreenView *)self.view;
     [view populateView:dataSource];
     view.delegate = self;
+
+    percentDrivenInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
 }
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     return [[GridToDetailAnimation alloc] init];
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    return [[GridToDetailAnimation alloc] init];
+}
+
+- (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator
+{
+    return percentDrivenInteractiveTransition;
 }
 
 - (void)didReceiveGridItem:(GridItem *)gridItem
@@ -63,7 +69,8 @@
     detailController.popUpDetailModel = [[PopUpDetailModel alloc] initWithLorem:[[LoremPixumImporter alloc] init]];
     detailController.modalPresentationStyle = UIModalPresentationCustom;
     detailController.delegate = self;
-    detailController.transitioningDelegate = self;
+    if([detailController respondsToSelector:@selector(setTransitioningDelegate:)])
+        detailController.transitioningDelegate = self;
     [self presentViewController:detailController animated:YES completion:nil];
 }
 
@@ -82,6 +89,12 @@
     mergedGridItem.number = gridItem.number != 0 ? gridItem.number : secondGridItem.number;
 
     return mergedGridItem;
+}
+
+- (UIPercentDrivenInteractiveTransition *)startPopAnimation
+{
+    [self dismissViewControllerAnimated:YES completion:^{}];
+    return percentDrivenInteractiveTransition;
 }
 
 

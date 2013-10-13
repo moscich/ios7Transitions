@@ -44,6 +44,11 @@
     GridCellView *gridCell = [cells objectAtIndex:gridItem.number];
     gridCell.gridCellThumbnail.image = gridItem.thumbnail;
     gridCell.cellLabel.text = gridItem.title;
+
+    gridCell.gridCellThumbnail.alpha = 0;
+    [UIView animateWithDuration:0.5 animations:^{
+        gridCell.gridCellThumbnail.alpha = 1;
+    }];
 }
 
 @end

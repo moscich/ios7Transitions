@@ -21,5 +21,4 @@
 
 @property (nonatomic, retain) id <GridScreenModelProtocol> gridScreenModel;
 
-- (IBAction) buttonPressed;
 @end

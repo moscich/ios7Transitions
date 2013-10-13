@@ -17,6 +17,7 @@
 @protocol PopUpDetailControllerDelegate
 - (NSMutableArray *)loadedGridItems;
 - (GridItem *)mergeGridItems:(GridItem *)gridItem secondGridItem:(GridItem *)secondGridItem;
+- (UIPercentDrivenInteractiveTransition *)startPopAnimation;
 @end
 
 @interface PopUpDetailController : UIViewController <PopUpDetailModelDelegate, PopUpDetailViewDelegate>

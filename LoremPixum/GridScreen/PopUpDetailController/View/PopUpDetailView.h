@@ -12,9 +12,12 @@
 
 @protocol PopUpDetailViewDelegate
 - (int)currentlyDisplayedItem;
+- (void)didDisplayItem:(int)item;
+- (void)didDragScrollViewDown:(float)percent;
+- (void)didEndDraggingScrollView:(BOOL)finished;
 @end
 
-@interface PopUpDetailView : UIView
+@interface PopUpDetailView : UIView <UIScrollViewDelegate>
 {
     IBOutlet UIScrollView *scrollView;
     NSMutableArray *cells;
