@@ -13,9 +13,16 @@
 @implementation LoremPixumImporter {
 
 }
+- (void)getGrayImageWithWidth:(int)width withHeight:(int)height withCategory:(NSString *)category onCompletion:(void (^)(UIImage *))completion
+{
+    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"http://lorempixel.com/g/%d/%d/%@",width, height, category]];
+    [self getImageWithUrl:url onCompletion:completion];
+}
+
 - (void)getImageWithWidth:(int)width withHeight:(int)height onCompletion:(void (^)(UIImage *))completion
 {
-    [self getImageWithWidth:width withHeight:height withIdentifier:0 onCompletion:completion];
+    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"http://lorempixel.com/%d/%d/",width, height]];
+    [self getImageWithUrl:url onCompletion:completion];
 }
 
 - (void)getImageWithWidth:(int)width withHeight:(int)height withIdentifier:(int)identifier onCompletion:(void (^)(UIImage *))completion
@@ -30,6 +37,11 @@
         url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"http://lorempixel.com/%d/%d/cats/%d/",width, height, identifier]];
     }
 
+    [self getImageWithUrl:url onCompletion:completion];
+}
+
+- (void)getImageWithUrl:(NSURL *)url onCompletion:(void (^)(UIImage *))completion
+{
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
 

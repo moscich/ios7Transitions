@@ -12,4 +12,12 @@
 @implementation PopUpDetailCell {
 
 }
+
+- (void)awakeFromNib 
+{
+    [super awakeFromNib];
+    
+    textField.textAlignment = NSTextAlignmentJustified;
+}
+
 @end

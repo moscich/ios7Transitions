@@ -40,7 +40,7 @@
     if(cell.imageView.image == nil)
     {
         cell.imageView.image = gridItem.image;
-
+        cell.titleLabel.text = gridItem.title;
         cell.imageView.alpha = 0;
         [UIView animateWithDuration:0.5 animations:^{
             cell.imageView.alpha = 1;

@@ -30,14 +30,14 @@
     for(int i = 0;i < dataSource.count; i++)
     {
         GridCellView *gridCell = [[[NSBundle mainBundle] loadNibNamed:@"GridCellView" owner:self options:nil] lastObject];
-        gridCell.center = CGPointMake( i % 2 ? _scrollView.center.x*0.5 : _scrollView.center.x*1.5, 80 + i/2*130);
+        gridCell.center = CGPointMake( i % 2 ? _scrollView.center.x*0.5 : _scrollView.center.x*1.5, 130 + i/2*130);
         gridCell.tag = i;
         [gridCell addTarget:self action:@selector(gridItemWasSelected:) forControlEvents:UIControlEventTouchUpInside];
 
         [_scrollView addSubview:gridCell];
         [cells addObject:gridCell];
     }
-    _scrollView.contentSize = CGSizeMake(_scrollView.frame.size.width, 150 + (dataSource.count-1)/2 *130);
+    _scrollView.contentSize = CGSizeMake(_scrollView.frame.size.width, 200 + (dataSource.count-1)/2 *130);
 }
 
 - (void)populateGridCell:(GridItem *)gridItem
@@ -49,6 +49,16 @@
     gridCell.gridCellThumbnail.alpha = 0;
     [UIView animateWithDuration:0.5 animations:^{
         gridCell.gridCellThumbnail.alpha = 1;
+    }];
+}
+
+- (void)populateViewsBackground:(UIImage *)backgroundImage
+{
+    _backgroundImageView.alpha = 0;
+    _backgroundImageView.image = backgroundImage;
+
+    [UIView animateWithDuration:0.5 animations:^{
+        _backgroundImageView.alpha = 1;
     }];
 }
 

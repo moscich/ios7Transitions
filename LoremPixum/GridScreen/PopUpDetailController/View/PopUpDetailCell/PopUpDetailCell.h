@@ -11,9 +11,10 @@
 
 @interface PopUpDetailCell : UIView
 {
-
+    IBOutlet UITextField *textField;
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 
 @end

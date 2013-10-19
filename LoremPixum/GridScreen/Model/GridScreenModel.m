@@ -10,6 +10,7 @@
 #import "LoremPixumImporter.h"
 #import "LoremPixumImporterProtocol.h"
 #import "GridItem.h"
+#import "FXBlurView.h"
 
 
 @implementation GridScreenModel {
@@ -35,6 +36,15 @@
     {
         [self requestGridItem:i];
     }
+}
+
+- (void)requestBackgroundImage
+{
+    [loremPixum getGrayImageWithWidth:640 withHeight:1136 withCategory:@"abstract" onCompletion:^(UIImage *image) {
+        UIImage *blurImage = [image blurredImageWithRadius:20 iterations:3 tintColor:nil];
+
+        [self.delegate didReceiveBackgroundImage:blurImage];
+    }];
 }
 
 - (void)requestGridItem:(int)number

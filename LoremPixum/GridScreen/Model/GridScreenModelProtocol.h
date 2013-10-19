@@ -13,12 +13,13 @@
 @protocol GridScreenModelDelegate
 
 - (void)didReceiveGridItem:(GridItem *)gridItem;
-
+- (void)didReceiveBackgroundImage:(UIImage *)backgroundImage;
 @end
 
 @protocol GridScreenModelProtocol <NSObject>
 @property (nonatomic, assign) NSObject <GridScreenModelDelegate> *delegate;
 
+- (void)requestBackgroundImage;
 - (void)requestGridItem:(int)number;
 - (void)requestGridItemsFrom:(int)from to:(int)to;
 

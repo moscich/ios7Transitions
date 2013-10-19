@@ -10,6 +10,7 @@
 
 @protocol LoremPixumImporterProtocol <NSObject>
 
+- (void)getGrayImageWithWidth:(int)width withHeight:(int)height withCategory:(NSString *)category onCompletion:(void (^)(UIImage *))completion;
 - (void)getImageWithWidth:(int)width withHeight:(int)height onCompletion:(void (^)(UIImage *))completion;
 - (void)getImageWithWidth:(int)width withHeight:(int)height withIdentifier:(int)identifier onCompletion:(void (^)(UIImage *))completion;
 

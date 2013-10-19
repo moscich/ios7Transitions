@@ -48,7 +48,7 @@
     [dataSource replaceObjectAtIndex:gridItem.number withObject:mergedGridItem];
 
     PopUpDetailView *view = (PopUpDetailView *)self.view;
-    [view populateGridDetailCell:gridItem];
+    [view populateGridDetailCell:mergedGridItem];
 }
 
 - (int)currentlyDisplayedItem

@@ -25,13 +25,14 @@
 {
     dataSource = [[NSMutableArray alloc] init];
     _gridScreenModel.delegate = self;
-    for(int i = 0;i < 20 ; i++)
+    for(int i = 0;i < 10 ; i++)
     {
         GridItem *gridItem = [[GridItem alloc] init];
         gridItem.number = i;
         [dataSource addObject:gridItem];
     }
-    [_gridScreenModel requestGridItemsFrom:0 to:19];
+    [_gridScreenModel requestGridItemsFrom:0 to:10];
+    [_gridScreenModel requestBackgroundImage];
     GridScreenView *view = (GridScreenView *)self.view;
     [view populateView:dataSource];
     view.delegate = self;
@@ -61,6 +62,12 @@
     [dataSource replaceObjectAtIndex:gridItem.number withObject:mergedGridItem];
     GridScreenView *view = (GridScreenView *)self.view;
     [view populateGridCell:mergedGridItem];
+}
+
+- (void)didReceiveBackgroundImage:(UIImage *)backgroundImage
+{
+    GridScreenView *view = (GridScreenView *)self.view;
+    [view populateViewsBackground:backgroundImage];
 }
 
 - (void)gridItemWasSelected:(int)gridItem
