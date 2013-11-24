@@ -447,9 +447,9 @@ static UIImage * AFInflatedImageFromResponseWithDataAtScale(NSHTTPURLResponse *r
     CGImageRef imageRef = nil;
     CGDataProviderRef dataProvider = CGDataProviderCreateWithCFData((__bridge CFDataRef)data);
 
-    if ([response.MIMEType isEqualToString:@"image/png"]) {
+    if ([response.MIMEType isEqualToString:@"imageView/png"]) {
         imageRef = CGImageCreateWithPNGDataProvider(dataProvider,  NULL, true, kCGRenderingIntentDefault);
-    } else if ([response.MIMEType isEqualToString:@"image/jpeg"]) {
+    } else if ([response.MIMEType isEqualToString:@"imageView/jpeg"]) {
         imageRef = CGImageCreateWithJPEGDataProvider(dataProvider, NULL, true, kCGRenderingIntentDefault);
     }
 
@@ -527,7 +527,7 @@ static UIImage * AFInflatedImageFromResponseWithDataAtScale(NSHTTPURLResponse *r
         return nil;
     }
 
-    self.acceptableContentTypes = [[NSSet alloc] initWithObjects:@"image/tiff", @"image/jpeg", @"image/gif", @"image/png", @"image/ico", @"image/x-icon", @"image/bmp", @"image/x-bmp", @"image/x-xbitmap", @"image/x-win-bitmap", nil];
+    self.acceptableContentTypes = [[NSSet alloc] initWithObjects:@"imageView/tiff", @"imageView/jpeg", @"imageView/gif", @"imageView/png", @"imageView/ico", @"imageView/x-icon", @"imageView/bmp", @"imageView/x-bmp", @"imageView/x-xbitmap", @"imageView/x-win-bitmap", nil];
 
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
     self.imageScale = [[UIScreen mainScreen] scale];
@@ -566,12 +566,12 @@ static UIImage * AFInflatedImageFromResponseWithDataAtScale(NSHTTPURLResponse *r
         return AFImageWithDataAtScale(data, self.imageScale);
     }
 #elif defined(__MAC_OS_X_VERSION_MIN_REQUIRED)
-    // Ensure that the image is set to it's correct pixel width and height
+    imageViewight
     NSBitmapImageRep *bitimage = [[NSBitmapImageRep alloc] initWithData:data];
-    NSImage *image = [[NSImage alloc] initWithSize:NSMakeSize([bitimage pixelsWide], [bitimage pixelsHigh])];
-    [image addRepresentation:bitimage];
+    NSImage *imageView = [[NSImage alloc] initWithSize:NSMakeSize([bitimage pixelsWide], [bitimage pixelsHigh])];
+    [imageView addRepresentation:bitimage];
 
-    return image;
+    return imageView;
 #endif
 
     return nil;

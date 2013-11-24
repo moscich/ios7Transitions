@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol MenuViewDelegate
+- (void)didSelectItem:(int)item;
+@end
 
 @interface MenuView : UIView <UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableArray *dataSource;
+    IBOutlet UITableView *tableView;
 }
+
+@property (nonatomic, assign) id <MenuViewDelegate> delegate;
+
 @end

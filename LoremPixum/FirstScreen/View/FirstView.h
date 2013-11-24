@@ -14,6 +14,7 @@
 @protocol FirstViewDelegate
 
 - (void)navigateToSecondView:(SecondScreenImagePack *)imagePack;
+- (void)didSelectRowWithFrame:(CGRect)frame withImage:(UIImage *)image;
 
 @end
 
@@ -27,5 +28,6 @@
 @property (nonatomic, assign) NSObject <FirstViewDelegate> *delegate;
 
 - (void)populateView:(UIImage *)image;
+- (void)selectRowAtPoint:(CGPoint)point;
 
 @end

@@ -7,7 +7,14 @@
 
 
 #import <Foundation/Foundation.h>
+#import "MenuView.h"
 
+@protocol MenuViewControllerDelegate
+- (void)didSelectItem:(int)item;
+@end
 
-@interface MenuViewController : UIViewController
+@interface MenuViewController : UIViewController <MenuViewDelegate>
+
+@property (nonatomic, assign) id <MenuViewControllerDelegate> delegate;
+
 @end

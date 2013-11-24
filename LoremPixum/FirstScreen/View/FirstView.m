@@ -26,6 +26,20 @@
     [tableView reloadData];
 }
 
+- (void)selectRowAtPoint:(CGPoint)point
+{
+    for(int index = 0; index < [self tableView:tableView numberOfRowsInSection:1]; index++)
+    {
+        CGRect rectInTableView = [tableView rectForRowAtIndexPath:[NSIndexPath indexPathForItem:index inSection:1]];
+        CGRect frame = [tableView convertRect:rectInTableView toView:self];
+
+        if(CGRectContainsPoint(frame, point))
+        {
+            [self tableView:tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForItem:index inSection:1]];
+        }
+    }
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 2;
@@ -89,18 +103,12 @@
 
 - (void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.section == 0)
-        return;
-    int upperSomething = 100 * indexPath.row + 2 - (int)_tableView.contentOffset.y + 120;
-    NSLog(@"content offset = %d", upperSomething);
+    CGRect rectInTableView = [_tableView rectForRowAtIndexPath:indexPath];
+    CGRect frame = [_tableView convertRect:rectInTableView toView:self];
 
-    UIImage *screenShot = [self screenShot];
-    SecondScreenImagePack *imagePack = [[SecondScreenImagePack alloc] init];
-    imagePack.backgroundImage = [dataSource objectAtIndex:indexPath.row];
-    imagePack.upperImage = [self cropImage:screenShot withRect:CGRectMake(0, 0, screenShot.size.width, upperSomething)];
-    imagePack.lowerImage = [self cropImage:screenShot withRect:CGRectMake(0, upperSomething + 98, screenShot.size.width, screenShot.size.height- upperSomething)];
+    CGRect croppedFrame = CGRectMake(frame.origin.x, frame.origin.y +2, frame.size.width, frame.size.height -4);
 
-    [self.delegate navigateToSecondView:imagePack];
+    [self.delegate didSelectRowWithFrame:croppedFrame withImage:[dataSource objectAtIndex:indexPath.row]];
 }
 
 - (UIImage *)croppedImageForRow:(int)row
@@ -110,7 +118,7 @@
     {
         return [croppedImages objectForKey:key];
     }
-    UIImage *croppedImage = [self cropImage:[dataSource objectAtIndex:row] withRect:CGRectMake(0, 234*2 , 640, 192)];
+    UIImage *croppedImage = [self cropImage:[dataSource objectAtIndex:row] withRect:CGRectMake(0, 234*2 , 640, 196)];
     [croppedImages setObject:croppedImage forKey:key];
     return croppedImage;
 }
@@ -120,15 +128,6 @@
     CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
     [UIImage imageWithCGImage:imageRef];
     return [UIImage imageWithCGImage:imageRef];
-}
-
-- (UIImage *)screenShot
-{
-    UIGraphicsBeginImageContext(self.frame.size);
-    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *screenImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return screenImage;
 }
 
 @end

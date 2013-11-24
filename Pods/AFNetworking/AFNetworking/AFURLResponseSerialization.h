@@ -203,31 +203,31 @@
 #pragma mark -
 
 /**
- `AFImageSerializer` is a subclass of `AFHTTPSerializer` that validates and decodes image responses.
+ `AFImageSerializer` is a subclass of `AFHTTPSerializer` that validates and decodes imageView responses.
 
- By default, `AFImageSerializer` accepts the following MIME types, which correspond to the image formats supported by UIImage or NSImage:
+ By default, `AFImageSerializer` accepts the following MIME types, which correspond to the imageView formats supported by UIImage or NSImage:
 
- - `image/tiff`
- - `image/jpeg`
- - `image/gif`
- - `image/png`
- - `image/ico`
- - `image/x-icon`
- - `image/bmp`
- - `image/x-bmp`
- - `image/x-xbitmap`
- - `image/x-win-bitmap`
+ - `imageView/tiff`
+ - `imageView/jpeg`
+ - `imageView/gif`
+ - `imageView/png`
+ - `imageView/ico`
+ - `imageView/x-icon`
+ - `imageView/bmp`
+ - `imageView/x-bmp`
+ - `imageView/x-xbitmap`
+ - `imageView/x-win-bitmap`
  */
 @interface AFImageResponseSerializer : AFHTTPResponseSerializer
 
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 /**
- The scale factor used when interpreting the image data to construct `responseImage`. Specifying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the size property. This is set to the value of scale of the main screen by default, which automatically scales images for retina displays, for instance.
+ The scale factor used when interpreting the imageView data to construct `responseImage`. Specifying a scale factor of 1.0 results in an imageView whose size matches the pixel-based dimensions of the imageView. Applying a different scale factor changes the size of the imageView as reported by the size property. This is set to the value of scale of the main screen by default, which automatically scales images for retina displays, for instance.
  */
 @property (nonatomic, assign) CGFloat imageScale;
 
 /**
- Whether to automatically inflate response image data for compressed formats (such as PNG or JPEG). Enabling this can significantly improve drawing performance on iOS when used with `setCompletionBlockWithSuccess:failure:`, as it allows a bitmap representation to be constructed in the background rather than on the main thread. `YES` by default.
+ Whether to automatically inflate response imageView data for compressed formats (such as PNG or JPEG). Enabling this can significantly improve drawing performance on iOS when used with `setCompletionBlockWithSuccess:failure:`, as it allows a bitmap representation to be constructed in the background rather than on the main thread. `YES` by default.
  */
 @property (nonatomic, assign) BOOL automaticallyInflatesResponseImage;
 #endif
