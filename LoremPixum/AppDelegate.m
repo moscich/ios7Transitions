@@ -30,18 +30,21 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    MenuViewController *menuViewController = [[MenuViewController alloc] initWithNibName:@"MenuView" bundle:nil];
+
     FirstScreenController *firstScreenController = [[FirstScreenController alloc] initWithNibName:@"FirstScreenView" bundle:nil];
-    WelcomeScreenController *welcomeScreenController = [[WelcomeScreenController alloc] initWithNibName:@"WelcomeScreenView" bundle:nil];
+
     GridScreenController *gridScreenController = [[GridScreenController alloc] initWithNibName:@"DynamicsScreenView" bundle:nil];
     gridScreenController.gridScreenModel = [[GridScreenModel alloc] initWithLorem:[[LoremPixumImporter alloc] init]];
-    UINavigationController *navigationController = [[UINavigationController alloc] init];
-    MainControllerContainer *controllerContainer = [[MainControllerContainer alloc] initWithFrontViewController:navigationController backViewController:menuViewController];
-    firstScreenController.delegate = controllerContainer;
-    welcomeScreenController.delegate = controllerContainer;
-    menuViewController.delegate = controllerContainer;
-    self.window.rootViewController = controllerContainer;
-    [self.window addSubview:controllerContainer.view];
+
+
+// Uncomment this line of code to show controller performing custom push transition between controllers
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstScreenController];
+
+    // Uncomment this line of code to show Grid controller that customly presents modal view controller
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:gridScreenController];
+
+    self.window.rootViewController = navigationController;
+    [self.window addSubview:navigationController.view];
     return YES;
 }
 
